@@ -1,0 +1,2324 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/loading.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 彈窗-->
+    <script src="js/lity/lity.js"></script>
+    <!-- 效果 -->
+    <script src="js/internal.js"></script>
+    <!-- 時間 -->
+    <script src="js/time.js"></script>
+    
+    <title>2023至尊赌神赛</title>
+</head>
+
+<body>
+
+    <div class="side_menu">
+        <div id="side"></div>
+        <div class="extra">
+            <a href="god.html" class="pro_4">赌神榜</a>
+            <a href="https://www.guai999.com/" class="pro_6" target="_blank">乖乖助手</a>
+        </div>
+    </div>
+
+    <div id="menu"></div>
+
+    <section class="whole-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 t-align-center">
+                    <div class="rank-space">
+                        <!-- 倒數計時 -->
+                        <div class="time-area m_10">
+                            <div class="title">
+                                <span>距离结束还剩下</span>
+                            </div>
+                            <div class="timer">
+                                <div class="timer__container">
+                                    <span id="days">0</span>
+                                    <p class="timer__label">天</p>
+                                </div>
+
+                                <div class="timer__container">
+                                    <span id="hrs">0</span>
+                                    <p class="timer__label">时</p>
+                                </div>
+
+                                <div class="timer__container">
+                                    <span id="mins">0</span>
+                                    <p class="timer__label">分</p>
+                                </div>
+
+                                <div class="timer__container">
+                                    <span id="seconds">0</span>
+                                    <p class="timer__label">秒</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rank-title">全民积分排行榜</span>
+                        <span class="rank-text">排行榜每半小時更新</span>
+                        <div class="description_title w_bg">
+                            <span>
+                                当月月总有效投注满1元
+                            </span>
+                            <span>
+                                (含)以上且NB值≥1即可进榜
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 月赛積分  -->
+                <div class="col-12 select-month m1 ld ld-blur-in">
+                    <div class="row">
+                        <div class="col-lg-4 my_game">                                
+                            <!-- 月賽 -->
+                            <img src="images/rank-tltle-month.png" class="member-title">
+                            <!-- 年中賽 -->
+                            <img src="images/rank-tltle-mid-year.png" class="member-title" style="display: none">
+                            <!-- 總決賽 -->
+                            <img src="images/rank-tltle-finals.png" class="member-title" style="display: none">
+                            
+                            <div class="member-rank">
+                                <div class="member-login t-align-center">
+                                    
+                                    <!-- 狀態顯示 預覽用 上線麻煩刪除 -->
+                                    <div class="apply">
+                                        <p>預覽用</p>
+                                        <a class="btn_1">登入前</a>
+                                        <a class="btn_2">登入後</a>
+                                    </div><!-- 到這裡刪除 -->
+
+                                    <!-- 顯示內容  -- 登入前 -->
+                                    <div class="member-main host"> <!-- class " host " 預覽用 上線麻煩刪除 -->
+
+                                        <!-- 登入前 皇冠 -->
+                                        <div class="moving">
+                                            <img src="images/crown_r_login.png" class="ldx ldx-wander-v">
+                                            <span class="title">查看个人排行及获奖记录</span>
+                                        </div>                                        
+                                        
+                                        <!-- 按鈕 -->
+                                        <div class="member-rank-inner">
+                                            <!-- 登入前 按鈕 -->
+                                            <a class="login-btn">
+                                                <span class="login-text">立即登录</span>
+                                            </a>
+
+                                            <div class="list-btnarea">
+                                                <a class="semi-list">
+                                                    <span class="list-icon">
+                                                        <img src="images/semi-icon.png" alt="">
+                                                    </span>
+                                                    <span>
+                                                        年中赛资格<br>名单
+                                                    </span>
+                                                </a>
+                                                <!-- 總決賽 開始 顯示 -->
+                                                <a class="final-list">
+                                                    <span class="list-icon">
+                                                        <img src="images/final-icon.png" alt="">
+                                                    </span>
+                                                    <span>
+                                                        总决赛资格<br>名单
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <!-- 顯示內容  -- 登入後 -->
+                                    <div class="member-main bg_d second" style="display: none"> <!-- class " second " 預覽用 上線麻煩刪除 -->
+                                        
+                                        <!-- 狀態顯示 預覽用 上線麻煩刪除 -->
+                                        <div class="apply2">
+                                            <p>預覽用</p>
+                                            <a class="btn_a0">尚未開始</a>                                            
+                                            <a class="btn_a1">追榜</a>
+                                            <a class="btn_a2">月賽</a>
+                                            <a class="btn_a3">年中賽1</a>
+                                            <a class="btn_a4">年中賽2</a>
+                                            <a class="btn_a5">總決賽</a> 
+                                            <a class="btn_a11">晋升</a>                                        
+                                            <a class="btn_a6">關閉</a>
+                                            <a class="btn_a7">開啟</a>
+                                        </div>
+                                        <div class="apply2-1">
+                                            <a class="btn_a8" title="總決賽 入榜 第2~20名">訊息1</a>
+                                            <a class="btn_a9" title="總決賽 入榜 第1名">訊息2</a>
+                                            <a class="btn_a10" title="原狀態">原本</a>
+                                        </div><!-- 到這裡刪除 -->
+                                        
+                                        <!-- 會員資訊 -->
+                                        <div class="login_content" >
+
+                                            <!-- 年終賽 未入榜 顯示 -->
+                                            <div class="not_enter" >
+                                                <img src="images/marvel.png" alt="">
+                                                <!--活動尚未開始 提示 -->
+                                                <span class="a0"> <!-- class " a0 " 預覽用 上線麻煩刪除 -->
+                                                    尚未开始
+                                                </span>
+                                                <!--即可領獎 提示 -->
+                                                <span style="display: none" class="a1"> <!-- class " a1 " 預覽用 上線麻煩刪除 -->
+                                                    亲，月投注达5000元以上就有奖金18元<br>NB值满1有机会进入排行榜1-30名
+                                                    <div>距离5,000元只要再<br><p>3000</p>元，去投注吧!</div>
+                                                </span>
+                                                <!-- 月賽 -->
+                                                <span style="display: none" class="a2"> <!-- class " a2 " 預覽用 上線麻煩刪除 -->
+                                                    亲，月投注达5千即可领奖<br>NB值满1有机会进入排行榜1-30名
+                                                </span>
+                                                <!-- 年中賽 第一場 -->
+                                                <span style="display: none" class="a3"> <!-- class " a3 " 預覽用 上線麻煩刪除 -->
+                                                    亲，只要在2023年6月-10月<br>月赛累积最终赌神积分排名 第1-30名即可参赛！
+                                                </span>
+                                                <!-- 年中賽 第二場 -->
+                                                <span style="display: none" class="a4"> <!-- class " a4 " 預覽用 上線麻煩刪除 -->
+                                                    亲，只要在2023年12月-2024年04月<br>月赛累积最终赌神积分排名 第1-30名即可参赛！
+                                                </span>
+                                                <!-- 總決賽 -->
+                                                <span style="display: none" class="a5"> <!-- class " a5 " 預覽用 上線麻煩刪除 -->
+                                                    亲，总决赛进行中 2023年至尊赌神即将出炉<br>冠军奖金奖落谁家 一起持续关注吧！
+                                                </span>
+                                                <!-- 已晉升 賭神榜 顯示 -->
+                                                <span style="display: none" class="a11"> <!-- class " a11 " 預覽用 上線麻煩刪除 -->
+                                                    亲，恭喜您已晋升赌神榜<br>想冲高榜就下重注，您将成为榜上yyds
+                                                </span>
+                                            </div>  
+
+                                            <div class="procession_1">
+                                                亲爱的
+                                                <span class="txt_color_c">12345678910</span>
+                                                贵宾您好!
+                                                <!-- ↓ 總決賽 入榜 第2~20名 顯示 --> <!-- class " a8 " 預覽用 上線麻煩刪除 -->
+                                                <span class="rendition txt_color_c a8" style="display: none">
+                                                    2023赌神赛最终场 , 心无悬念全力冲刺吧！
+                                                </span>
+                                                <!-- ↓ 總決賽 入榜 第1名 顯示 --> <!-- class " a9 " 預覽用 上線麻煩刪除 -->
+                                                <span class="rendition txt_color_c a9">
+                                                    恭喜您领先成为赌神冠军，等您继续保持喔❤
+                                                </span>
+                                            </div>
+                                            <div class="procession_2">
+                                                <ul>
+                                                    <!-- 月賽 -->
+                                                    <img src="images/ranking_month.png" class="ranking_trophy">
+                                                    <!-- 年中賽 --> <!-- class " a8 " 預覽用 上線麻煩刪除 -->
+                                                    <img src="images/ranking_mid_year.png" class="ranking_trophy a8" style="display: none">
+                                                    <!-- 總決賽 --> <!-- class " a9 " 預覽用 上線麻煩刪除 -->
+                                                    <img src="images/ranking_finals.png" class="ranking_trophy a9" style="display: none">
+                                                    <li>我的名次</li>
+                                                    <li class="digital short txt_color_c">1</li>
+                                                    <span>名</span>
+                                                </ul>
+                                                <ul>
+                                                    <img src="images/ranking_bonus.png" class="ranking_bonus">
+                                                    <li>我的奖金</li>
+                                                    <li class="digital short txt_color_c">288</li>
+                                                    <span>元</span>
+                                                </ul>
+                                            </div>
+                                            <div class="procession_3">
+                                                <ul>
+                                                    <li class="txt_color_a">
+                                                        NB值
+                                                        <span class="information">(单位:1亿)</span>
+                                                        <a href="javascript:void(0)" class="tooltip">
+                                                            <div>
+                                                                <span class="tooltiptext">
+                                                                    有效投注 X 派彩绝对值<br>(不论正负)
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="digital txt_color_a">99,989,999</li>
+                                                </ul>
+                                                <span class="symbol">×</span>
+                                                <ul>
+                                                    <li class="txt_color_d">
+                                                        签到倍数
+                                                        <a href="javascript:void(0)" class="tooltip">
+                                                            <div>
+                                                                <span class="tooltiptext">
+                                                                    日总有效投注满 1,000元(含)<br>并月签七天(含)以上即符合资格
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="digital txt_color_d">5</li>
+                                                </ul>
+                                                <span class="symbol">×</span>
+                                                <ul>
+                                                    <li class="txt_color_e">
+                                                        成长倍数
+                                                        <a href="javascript:void(0)" class="tooltip">
+                                                            <div>
+                                                                <span class="tooltiptext">
+                                                                    有效投注较前月成长1元(含)以上即符合资格。
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="digital txt_color_e">5</li>
+                                                </ul>
+                                                <span class="symbol">=</span>
+                                            </div>
+                                            <div class="procession_4">
+                                                <ul>
+                                                    <li class="txt_color_a">
+                                                        赌神积分
+                                                        <a href="javascript:void(0)" class="tooltip">
+                                                            <div>
+                                                                <span class="tooltiptext">
+                                                                    <!-- 月賽 -- 顯示 -->
+                                                                    NB值X 签到倍数X 成长倍数
+                                                                    <!-- 年中賽 -- 顯示 -->
+                                                                    <!-- NB值X 签到倍数 -->
+                                                                    <!-- 總決賽 -- 顯示 -->
+                                                                    <!-- NB值X 单注倍数X 签到倍数 -->
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                        <!-- ↓ 年中賽第一場 顯示 -->
+                                                        <span class="information right" >
+                                                            <p class="marvel"></p>
+                                                            NB值未满1不列入计算
+                                                        </span>
+                                                    </li>
+                                                    <li class="digital txt_color_a">99,989,999</li>
+                                                </ul>
+                                            </div>
+                                            <div class="procession_5">
+                                                <ul>
+                                                    <li class="txt_color_a">
+                                                        赌神积分
+                                                        <a href="javascript:void(0)" class="tooltip">
+                                                            <div>
+                                                                <span class="tooltiptext">
+                                                                    <!-- 月賽 -- 顯示 -->
+                                                                    NB值X 签到倍数X 成长倍数
+                                                                    <!-- 年中賽 -- 顯示 -->
+                                                                    <!-- NB值X 签到倍数 -->
+                                                                    <!-- 總決賽 -- 顯示 -->
+                                                                    <!-- NB值X 单注倍数X 签到倍数 -->
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="digital txt_color_a">99,989,999</li>
+                                                </ul>
+                                                <span class="symbol">+</span>                                                
+                                                <ul>
+                                                    <li class="txt_color_b">
+                                                        赌神翻倍积分
+                                                        <a href="javascript:void(0)" class="tooltip">
+                                                            <div>
+                                                                <span class="tooltiptext">
+                                                                    翻倍区间有效投注÷ 限定积分比值
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="digital txt_color_b">10,000</li>
+                                                </ul>
+                                                <span class="symbol">=</span>
+                                            </div>
+                                            <div class="procession_6">
+                                                <ul>
+                                                    <li class="txt_color_c">
+                                                        最终赌神积分
+                                                    </li>
+                                                    <li class="digital txt_color_c">99,999,999</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 按鈕 -->
+                                        <div class="member-rank-inner">
+
+                                            <!-- 登入後 按鈕 -->
+                                            <a class="login-btn">
+                                                <span class="list-icon">
+                                                    <img src="images/chips-icon.png" alt="">
+                                                </span>
+                                                <span class="login-text">立即前往投注</span>
+                                            </a>
+
+                                            <div class="list-btnarea">
+                                                <a class="semi-list">
+                                                    <span class="list-icon">
+                                                        <img src="images/semi-icon.png" alt="">
+                                                    </span>
+                                                    <span>
+                                                        年中赛资格<br>名单
+                                                    </span>
+                                                </a>
+                                                <!-- 總決賽 開始 顯示 -->
+                                                <a class="final-list">
+                                                    <span class="list-icon">
+                                                        <img src="images/final-icon.png" alt="">
+                                                    </span>
+                                                    <span>
+                                                        总决赛资格<br>名单
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- 文字切換 -->
+                            <div class="ranking-text">
+                                <!-- 未開賽 -->  <!-- class " c7 " 預覽用 上線麻煩刪除 -->
+                                <span class="c7">全新赛制即将开赛，扩大游戏平台让投注额度更有价值，每场次满5千即可领獎</span>
+                                <!-- 月賽 --> <!-- class " c3 " 預覽用 上線麻煩刪除 -->
+                                <span class="c3" style="display: none">※月赛排名统计至2023-06-30 12:00:00截止，月赛奖金表于2023-07-04 12:00:00公布</span>
+                                <!-- 年中賽 第一場 --> <!-- class " c4 " 預覽用 上線麻煩刪除 -->
+                                <span class="c4" style="display: none;">※年中赛排名统计至2023-11-29 12:00:00截止，年中赛奖金表于2023-11-30 12:00:00公布</span>
+                                <!-- 年中賽 第二場 --> <!-- class " c5 " 預覽用 上線麻煩刪除 -->
+                                <span class="c5" style="display: none;">※年中赛排名统计至2024-05-29 12:00:00截止，年中赛奖金表于2024-05-30 12:00:00公布</span>
+                                <!-- 總決賽 --> <!-- class " c6 " 預覽用 上線麻煩刪除 -->
+                                <span class="c6" style="display: none;">※总决赛排名统计至2024-07-01 12:00:00截止，总决赛奖金表于2024-07-02 12:00:00公布</span>
+                            <!-- 場次 -->
+                            <div class="select-bg">
+                                <span>场次</span>
+                                <span class="select">
+                                    <select name="slct" id="select">
+                                        <option value="1" selected="">2023年4月月赛</option>
+                                        <option value="2">2023年5月月赛</option>
+                                        <option value="3">2023年6月月赛</option>
+                                        <option value="4">2023年7月月赛</option>
+                                        <option value="5">2023年8月月赛</option>
+                                        <option value="6">2023年9月年中赛</option>
+                                        <option value="7">2023年10月月赛</option>
+                                        <option value="8">2023年11月月赛</option>
+                                        <option value="9">2023年12月月赛</option>
+                                        <option value="10">2024年01月月赛</option>
+                                        <option value="11">2024年02月月赛</option>
+                                        <option value="12">2024年03月年中赛</option>
+                                        <option value="13">2024年04月总决赛</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                            </div>
+                            <div class="month-rank">
+
+                                <!-- 狀態顯示 預覽用 上線麻煩刪除 -->
+                                <div class="apply4">
+                                    <p>預覽用</p>
+                                    <a class="btn_c1" >開啟</a>
+                                    <a class="btn_c2" >關閉</a>
+                                    <a class="btn_c3" >月賽</a> 
+                                    <a class="btn_c4" >年中賽1</a>
+                                    <a class="btn_c5" >年中賽2</a>
+                                    <a class="btn_c6" >總決賽</a>
+                                    <a class="btn_c7" >未开赛</a>                                            
+                                </div><!-- 到這裡刪除 -->
+
+                                <!-- 未開始 列表 遮罩 -->
+                                <div class="list-mask" style="display: none">
+                                    2023至尊赌神赛<br>4/1(五)中午12点 准时开赛
+                                </div>                                
+                                
+                                <div class="t-align-center">
+                                    <ul class="ranking_table_title tit_bg_w">
+                                        <li>
+                                        </li>
+                                        <li>排名</li>
+                                        <li>帐号</li>
+                                        <li>
+                                            <span>
+                                                <p>
+                                                    最终赌神<br>积分
+                                                </p>
+                                                <a href="javascript:void(0)" class="tooltip">
+                                                    <span class="tooltiptext">
+                                                        赌神积分+ 赌神翻倍积分
+                                                    </span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="images/svg/coin.svg" class="coin">
+                                                <p>
+                                                    月赛<br>奖金
+                                                </p>
+                                            </span>
+                                        </li>
+                                        <li></li>
+                                    </ul>
+                                    <div>
+                                        <div class="item">
+                                            <ul><!-- 01 --><!-- 月賽顯示內容 -->
+                                                <li><img src="images/svg/rank-up.svg" alt="" width="15"></li>
+                                                <li class="rank-top3"><img src="images/month-num1.png" alt=""></li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格                                                                                                                                         
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    成长<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注较前月成长1元(含)以上即符合资格。
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 签到倍数X 成长倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                        <div class="item">
+                                            <ul><!-- 02 --><!-- 年終賽顯示內容 -->
+                                                <li><img src="images/svg/rank-down.svg" alt="" width="15"></li>
+                                                <li class="rank-top3"><img src="images/month-num2.png" alt=""></li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格                                                                        
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 03 --><!-- 總決賽顯示內容 -->
+                                                <li><img src="images/svg/rank-up.svg" alt="" width="15"></li>
+                                                <li class="rank-top3"><img src="images/month-num3.png" alt=""></li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数                                                                        
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 04 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">4</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 05 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">5</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 06 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">6</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 07 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">7</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                赌神积分
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 08 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">8</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 09 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">9</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 10 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">10</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 11 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">11</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 12 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">12</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 13 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">13</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 14 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">14</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <ul><!-- 15 --><!-- 總決賽顯示內容 -->
+                                                <li>-</li>
+                                                <li class="rank-num_w">15</li>
+                                                <li>wan***</li>
+                                                <li>
+                                                    <span class="txt_color_a">154,723</span>
+                                                    <spa class="txt_color_b">(+9,834)</span>
+                                                </li>
+                                                <li>18,888元</li>
+                                                <li>
+                                                    <a href="javascript:;" class="arrow"></a>
+                                                </li>
+                                                <!-- 下拉 -->
+                                                <div class="rank-info">
+                                                    <ul class="ranking_table_title tit_bg_w line_w">
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    单注<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            有效投注÷单量=单注值<br>
+                                                                            当月单注值相对应倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <!-- 入榜 顯示 -->
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    签到<br>倍数
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            日总有效投注满 1,000元(含)<br>
+                                                                            并月签七天(含)以上即符合资格
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_c">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            NB值X 单注倍数X 签到倍数
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_a">144,889</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <p>
+                                                                    赌神翻倍<br>积分
+                                                                </p>
+                                                                <a href="javascript:void(0)" class="tooltip">
+                                                                    <div>
+                                                                        <span class="tooltiptext">
+                                                                            翻倍区间有效投注÷ 限定积分比值
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span class="txt_color_b">9,834</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="load-more">更多內容 ▼</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+
+
+    <!-- 活动说明彈窗 -- 年中資格賽 -->
+    <div class="md early">
+
+        <div class="md-modal">
+            <button class="md-close" type="button"></button>
+            <div class="title-finals">
+                <!-- 年中賽 進榜 -->
+                <img src="images/bomb-whole-title-mid-year.png" class="title-finals">
+            </div>
+            <div class="outside">
+
+                <!-- 狀態顯示 預覽用 上線麻煩刪除 -->
+                <div class="apply3">
+                    <p>預覽用</p>
+                    <a class="btn_b1" >登入前</a>
+                    <a class="btn_b2" >登入後</a>
+                    <a class="btn_b3" title="資格符合-第1名">年中賽1</a>
+                    <a class="btn_b4" title="資格符合-第2-30名">年中賽2</a>
+                    <a class="btn_b5" title="資格符合-第31-40名">年中賽3</a>                                             
+                </div><!-- 到這裡刪除 -->
+
+                <div class="md-content">
+                    <div class="bomb_title">
+                        <!-- 倒數計時 -->
+                        <div class="time-area m_10">
+                            <div class="title">
+                                <!-- 年中賽 -->
+                                <span>距离年中赛开始还剩下</span>
+                            </div>
+                            <div class="timer">
+                                <div class="timer__container">
+                                    <span id="semi-days">0</span>
+                                    <p class="timer__label">天</p>
+                                </div>
+    
+                                <div class="timer__container">
+                                    <span id="semi-hrs">0</span>
+                                    <p class="timer__label">时</p>
+                                </div>
+    
+                                <div class="timer__container">
+                                    <span id="semi-mins">0</span>
+                                    <p class="timer__label">分</p>
+                                </div>
+    
+                                <div class="timer__container">
+                                    <span id="semi-seconds">0</span>
+                                    <p class="timer__label">秒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 登入前 按鈕 -->
+                    <div class="bomb_login" style="display: none">
+                        <a href="#" class="login-btn">
+                            <span class="login-text">立即登录</span>
+                        </a>
+                    </div>
+
+                    <div class="bomb_information">
+
+                        <!-- 未入榜 顯示內容 -->
+                        <div class="bomb_mask" style="display: none">
+                            <span>
+                                <img src="images/marvel.png" >
+                            </span>
+
+                            <!-- 年中賽 -->
+                            <span>
+                                进榜资格:亲，只要在2023年6月-10月<br>月赛累积最终赌神积分排名 第1-30名即可参赛!
+                            </span>
+                        </div>
+
+                        <div class="in_content">
+                            <div>
+                                亲爱的
+                                <span class="txt_color_c">12345678910</span>
+                                贵宾<br>您好!
+                            </div>
+                            <div>
+                                <ul>
+                                    <!-- 年中賽 圖示-->
+                                    <img src="images/mid_year_big.png" class="ranking_trophy">
+                                    <!-- 年中賽 -->
+                                    <li class="space_left">年中赛进榜名次</li>
+                                    <li class="digital short txt_color_c">1</li>
+                                    <span>名</span>
+                                </ul>
+                                <ul>
+                                    <li class="tick">
+                                        <img src="images/svg/tick.svg">
+
+                                        <!-- 年中賽 -- 資格符合-第1名 --> <!-- class " b3 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b3">亲，恭喜您位居领先，符合年中赛参赛资格</span>
+                                        <!-- 年中賽 -- 資格符合-第2-30名 --> <!-- class " b4 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b4" style="display: none">亲，您符合年中赛参赛资格，等您继续保持喔❤</span>
+                                        <!-- 年中賽 -- 資格符合-第31-40名 --> <!-- class " b5 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b5" style="display: none">亲，就快要晋级年中赛资格了，冲吧!</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <img src="images/ranking_integral.png" class="ranking_bonus">
+
+                                    <!-- 年中賽 -- 資格符合-第1名 -->
+                                    <!-- 年中賽 -- 資格符合-第2-30名 -->
+                                    <!-- 年中賽 -- 資格符合-第31-40名 -->
+                                    <li class="space_left">我的2023年6月-2023年10月<br>最终赌神积分</li>
+
+                                    <li class="digital short txt_color_c">
+                                        <span class="txt_color_a">154,723</span><spa class="txt_color_b">(+9,834)</span>
+                                    </li>
+                                    <span>元</span>
+                                </ul>
+                                <ul>
+                                    <li class="take">
+                                        <img src="images/svg/take.svg">
+
+                                        <!-- 年中賽 -- 資格符合-第1名 --> <!-- class " b3 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b3">恭喜您位居领先，太厉害了!</span>
+                                        <!-- 年中賽 -- 資格符合-第2-30名 --> <!-- class " b4 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b4" style="display: none">还差 <p> XX,XXX </p> 分，即可超越前位选手</span>
+                                        <!-- 年中賽 -- 資格符合-第31-40名 --> <!-- class " b5 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b5" style="display: none">还差 <p> XX,XXX </p> 分，就可以参加年中赛</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                    <div class="ranking-text txt_color_c">
+                        <span>※NB值達1(含)以上，排行榜即会开始排名</span>
+                    </div>
+    
+                    <div class="bomb-rank">
+
+                        <!-- 狀態顯示 預覽用 上線可刪除 -->
+                        <div class="apply4">
+                            <p>預覽用</p>
+                            <a class="btn_c1" >開啟</a>
+                            <a class="btn_c2" >關閉</a>                                          
+                        </div><!-- 到這裡刪除 -->
+
+                        <!-- 未開始 列表 遮罩 -->
+                        <div class="list-mask" style="display: none">
+                            2023至尊赌神赛<br>4/1(五)中午12点 准时开赛
+                        </div>
+                        
+                        <div class="t-align-center">
+                            <ul class="ranking_table_title tit_bg_w">
+                                <li>参赛<br>资格</li>
+                                <li>帐号</li>
+                                <li>
+                                    <span>最终赌神积分
+                                        <br>
+                                        <a href="javascript:void(0)" class="tooltip">
+                                            <span class="tooltiptext">
+                                                赌神积分+ 赌神翻倍积分
+                                            </span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>资格</li>
+                            </ul>
+                            <ul><!-- 01 -->
+                                <li class="rank-num_w">1</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 02 -->
+                                <li class="rank-num_w">2</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 03 -->
+                                <li class="rank-num_w">3</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 04 -->
+                                <li class="rank-num_w">4</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 05 -->
+                                <li class="rank-num_w">5</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 06 -->
+                                <li class="rank-num_w">6</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 07 -->
+                                <li class="rank-num_w">7</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 08 -->
+                                <li class="rank-num_w">8</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 09 -->
+                                <li class="rank-num_w">9</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 10 -->
+                                <li class="rank-num_w">10</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="pagination page_color">
+                        <ul>
+                            <li><a href="#">❬❬</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">❭❭</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="md-overlay"></div>
+    </div>
+
+
+    <!-- 活动说明彈窗 -- 總決賽 -->
+    <div class="md finals">
+
+        <div class="md-modal">
+            <button class="md-close" type="button"></button>
+            <div class="title-finals">
+                <!-- 總決賽 進榜 -->
+                <img src="images/bomb-whole-title-finals.png" class="title-finals">
+            </div>
+            <div class="outside">
+
+                <!-- 狀態顯示 預覽用 上線可刪除 -->
+                <div class="apply3">
+                    <p>預覽用</p>
+                    <a class="btn_b1" >登入前</a>
+                    <a class="btn_b2" >登入後</a>
+                    <a class="btn_b3" title="資格符合-第1名">總決賽1</a>
+                    <a class="btn_b4" title="資格符合-第2-30名">總決賽2</a>
+                    <a class="btn_b5" title="資格符合-第31-40名">總決賽3</a>                                             
+                </div><!-- 到這裡刪除 -->
+
+                <div class="md-content">
+                    <div class="bomb_title">
+                        <!-- 倒數計時 -->
+                        <div class="time-area m_10">
+                            <div class="title">
+                                <!-- 總決賽 -->
+                                <span>距离总决赛开始还剩下</span>
+                            </div>
+                            <div class="timer">
+                                <div class="timer__container">
+                                    <span id="final-days">0</span>
+                                    <p class="timer__label">天</p>
+                                </div>
+    
+                                <div class="timer__container">
+                                    <span id="final-hrs">0</span>
+                                    <p class="timer__label">时</p>
+                                </div>
+    
+                                <div class="timer__container">
+                                    <span id="final-mins">0</span>
+                                    <p class="timer__label">分</p>
+                                </div>
+    
+                                <div class="timer__container">
+                                    <span id="final-seconds">0</span>
+                                    <p class="timer__label">秒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 登入前 按鈕 -->
+                    <div class="bomb_login" style="display: none">
+                        <a href="#" class="login-btn">
+                            <span class="login-text">立即登录</span>
+                        </a>
+                    </div>
+
+                    <div class="bomb_information">
+
+                        <!-- 未入榜 顯示內容 -->
+                        <div class="bomb_mask" style="display: none">
+                            <span>
+                                <img src="images/marvel.png" >
+                            </span>
+
+                            <!-- 總決賽 -->
+                            <span>
+                                进榜资格:亲，两场年中赛累积最终赌神积分排名前20名即可参赛!
+                            </span>
+                        </div>
+
+                        <div class="in_content">
+                            <div>
+                                亲爱的
+                                <span class="txt_color_c">12345678910</span>
+                                贵宾<br>您好!
+                            </div>
+                            <div>
+                                <ul>
+                                    <!-- 總決賽 圖示-->
+                                    <img src="images/finals_big.png" class="ranking_trophy">
+                                    <!-- 總決賽 -->
+                                    <li class="space_left">总决赛进榜名次</li>
+                                    <li class="digital short txt_color_c">1</li>
+                                    <span>名</span>
+                                </ul>
+                                <ul>
+                                    <li class="tick">
+                                        <img src="images/svg/tick.svg">
+
+                                        <!-- 總決賽 -- 資格符合-第1名 --> <!-- class " b3 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b3">亲，恭喜您位居领先，符合总决赛参赛资格</span>
+                                        <!-- 總決賽 -- 資格符合-第2-20名 --> <!-- class " b4 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b4" style="display: none">亲，您符合总决赛参赛资格，等您继续保持喔</span>
+                                        <!-- 總決賽 -- 資格符合-第21-30名 --> <!-- class " b5 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b5" style="display: none">亲，就快要晋级总决赛资格了，冲吧!</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <img src="images/ranking_integral.png" class="ranking_bonus">
+
+                                    <!-- 總決賽 -- 資格符合-第1名 -->
+                                    <!-- 總決賽 -- 資格符合-第2-30名 -->
+                                    <!-- 總決賽 -- 資格符合-第31-40名 -->
+                                    <li class="space_left">我的两场年中赛最终赌神积分</li>
+
+                                    <li class="digital short txt_color_c">
+                                        <span class="txt_color_a">154,723</span><spa class="txt_color_b">(+9,834)</span>
+                                    </li>
+                                    <span>元</span>
+                                </ul>
+                                <ul>
+                                    <li class="take">
+                                        <img src="images/svg/take.svg">
+
+                                        <!-- 總決賽 -- 資格符合-第1名 --> <!-- class " b3 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b3">恭喜您位居领先，太厉害了!</span>
+                                        <!-- 總決賽 -- 資格符合-第2-30名 --> <!-- class " b4 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b4" style="display: none">还差 <p> XX,XXX </p> 分，即可超越前位选手</span>
+                                        <!-- 總決賽 -- 資格符合-第31-40名 --> <!-- class " b5 " 預覽用 上線麻煩刪除 -->
+                                        <span class="b5" style="display: none">还差 <p> XX,XXX </p> 分，就可以参加总决赛</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                    <div class="ranking-text txt_color_c">
+                        <span>※NB值達1(含)以上，排行榜即会开始排名</span>
+                    </div>
+    
+                    <div class="bomb-rank">
+
+                        <!-- 狀態顯示 預覽用 上線可刪除 -->
+                        <div class="apply4">
+                            <p>預覽用</p>
+                            <a class="btn_c1" >開啟</a>
+                            <a class="btn_c2" >關閉</a>                                          
+                        </div><!-- 到這裡刪除 -->
+
+                        <!-- 未開始 列表 遮罩 -->
+                        <div class="list-mask" style="display: none">
+                            2023至尊赌神赛<br>4/1(五)中午12点 准时开赛
+                        </div>
+                        
+                        <div class="t-align-center">
+                            <ul class="ranking_table_title tit_bg_w">
+                                <li>参赛<br>资格</li>
+                                <li>帐号</li>
+                                <li>
+                                    <span>最终赌神积分
+                                        <br>
+                                        <a href="javascript:void(0)" class="tooltip">
+                                            <span class="tooltiptext">
+                                                赌神积分+ 赌神翻倍积分
+                                            </span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>资格</li>
+                            </ul>
+                            <ul><!-- 01 -->
+                                <li class="rank-num_w">1</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 02 -->
+                                <li class="rank-num_w">2</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 03 -->
+                                <li class="rank-num_w">3</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 04 -->
+                                <li class="rank-num_w">4</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">154,723</span>
+                                    <spa class="txt_color_b">(+9,834)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 05 -->
+                                <li class="rank-num_w">5</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 06 -->
+                                <li class="rank-num_w">6</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 07 -->
+                                <li class="rank-num_w">7</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 08 -->
+                                <li class="rank-num_w">8</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 09 -->
+                                <li class="rank-num_w">9</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+    
+                            <ul><!-- 10 -->
+                                <li class="rank-num_w">10</li>
+                                <li>wan***</li>
+                                <li>
+                                    <span class="txt_color_a">14,723</span>
+                                    <spa class="txt_color_b">(+934)</span>
+                                </li>
+                                <li>恭喜<br>符合</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="pagination page_color">
+                        <ul>
+                            <li><a href="#">❬❬</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a class="active" href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">❭❭</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="md-overlay"></div>
+    </div>
+
+
+    <!-- gotop -->
+    <div class="gotop">
+        <a href="javascript:;">
+            <img src="images/gotop-normal.png">
+            <img src="images/gotop-hover.png">
+        </a>
+    </div>
+
+    <!-- 狀態顯示 預覽用 上線麻煩刪除  -->
+    <div class="state">
+        <p>選單</p>
+        <a class="on">on</a>
+        <a class="off">off</a>
+    </div><!-- 到這裡刪除 -->
+
+    <!-- 狀態顯示 預覽用 上線麻煩刪除  -->
+    <div id="test"></div><!-- 到這裡刪除 -->
+
+
+
+
+</body>
+
+</html>
