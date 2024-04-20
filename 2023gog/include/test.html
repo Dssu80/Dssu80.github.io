@@ -1,0 +1,219 @@
+    <!-- 狀態顯示 預覽用 上線麻煩刪除  -->
+    <style>
+        .state{
+            position: fixed ; 
+            z-index: 999; 
+            bottom: 0;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .state p{
+            color: #fff;
+        }
+        .state .on , .state .off{
+            width: 50px; 
+            line-height: 50px;
+            background: #fc6b6b; 
+            display: block;
+            margin-top: 10px;
+            color: #000;
+        }
+        .apply , .apply2 , .apply2-1 , .apply3 , .apply4{
+            font-size: 12px;
+            z-index: 99;
+            opacity: 0.2;
+            display: none;
+            cursor: pointer;
+        }
+        .apply:hover , .apply2:hover , .apply2-1:hover , .apply3:hover , .apply4:hover{
+            opacity: 1;
+        }
+        .apply{
+            position: fixed;
+            left: 0;
+            color: #fff;
+            top:10%
+        }
+        .apply2{
+            position: absolute;
+            margin-top: 5%;
+            color: #fff5ba;
+        }
+        .apply2-1{
+            position: absolute;
+            margin-top: 5%;
+            color: #000;
+            right: 0;
+        }
+        .apply3{
+            position: absolute;
+            margin-top: 5%;
+            color: #000;
+        }
+        .apply4{
+            position: absolute;
+            margin-top: 5%;
+            color: #000;
+            background: transparent !important;
+        }
+        .apply p , .apply2 p , .apply3 p , .apply4 p{
+            text-align: left;
+            margin-left: 8px;
+        }
+        .apply .btn_1 , .apply .btn_2 ,
+        .apply2 .btn_a0 , .apply2 .btn_a1 , .apply2 .btn_a2 , .apply2 .btn_a3 , .apply2 .btn_a4 , .apply2 .btn_a5 , .apply2 .btn_a6 , .apply2 .btn_a7, .apply2 .btn_a11,
+        .apply2-1 .btn_a8 , .apply2-1 .btn_a9, .apply2-1 .btn_a10,
+        .apply3 .btn_b1 , .apply3 .btn_b2 , .apply3 .btn_b3 , .apply3 .btn_b4 , .apply3 .btn_b5 , .apply3 .btn_b6 , .apply3 .btn_b7,
+        .apply4 .btn_c1 , .apply4 .btn_c2 , .apply4 .btn_c3 , .apply4 .btn_c4 , .apply4 .btn_c5 , .apply4 .btn_c6 , .apply4 .btn_c7
+        {
+            width: 50px; 
+            line-height: 50px;
+            text-align: center; 
+            color: #000;
+            display: block; 
+            margin: 10px 0;
+            border-radius: 50px;
+        }
+        .apply .btn_1 , .apply .btn_2{
+            background: #fff;
+        }
+        .apply2 .btn_a0 , .apply2 .btn_a1 , .apply2 .btn_a2 , .apply2 .btn_a3 , .apply2 .btn_a4 , .apply2 .btn_a5 , .apply2 .btn_a11
+        {
+            background: #fff5ba;
+        }
+        .apply2 .btn_a6 {
+            background: #b6b6b6;
+        }
+        .apply2 .btn_a7 {
+            background: #ffacac;
+        }
+        .apply2-1 .btn_a8 , .apply2-1 .btn_a9 , .apply2-1 .btn_a10 {
+            background: #84cf8e;
+        }
+        .apply3 .btn_b1 , .apply3 .btn_b2 , .apply3 .btn_b3 , .apply3 .btn_b4 , .apply3 .btn_b5 , .apply3 .btn_b6 , .apply3 .btn_b7{
+            background: #96d9ff;
+        }
+        .apply4 .btn_c1 , .apply4 .btn_c2{
+            background: #96d9ff;
+        }
+        .apply4 .btn_c3 , .apply4 .btn_c4 , .apply4 .btn_c5 , .apply4 .btn_c6 , .apply4 .btn_c7{
+            background: #fff5ba;
+        }
+    </style>
+
+    <!-- 狀態顯示 預覽用 上線麻煩刪除 -->
+    <script>
+        $(document).ready(function () {
+
+            $(".on").click(function () {
+                $(".apply,.apply2,.apply2-1,.apply3,.apply4").show();
+            });
+            $(".off").click(function () {
+                $(".apply,.apply2,.apply2-1,.apply3,.apply4").hide();
+            });
+
+            $(".btn_1").click(function () {
+                $(".host").show();
+                $(".second").hide();
+            });
+            $(".btn_2").click(function () {
+                $(".second").show();
+                $(".host").hide();
+            });
+
+            $(".btn_a0").click(function () {
+                $(".a0").show();
+                $(".a1,.a2,.a3,.a4,.a5,.a11").hide();
+            });
+            $(".btn_a1").click(function () {
+                $(".a1").show();
+                $(".a0,.a2,.a3,.a4,.a5,.a11").hide();
+            });
+            $(".btn_a2").click(function () {
+                $(".a2").show();
+                $(".a0,.a1,.a3,.a4,.a5,.a11").hide();
+            });
+            $(".btn_a3").click(function () {
+                $(".a3").show();
+                $(".a0,.a1,.a2,.a4,.a5,.a11").hide();
+            });
+            $(".btn_a4").click(function () {
+                $(".a4").show();
+                $(".a0,.a1,.a2,.a3,.a5,.a11").hide();
+            });
+            $(".btn_a5").click(function () {
+                $(".a5").show();
+                $(".a0,.a1,.a2,.a3,.a4,.a11").hide();
+            });
+            $(".btn_a11").click(function () {
+                $(".a11").show();
+                $(".a0,.a1,.a2,.a3,.a4,.a5").hide();
+            });
+            $(".btn_a6").click(function () {
+                $(".not_enter").hide();
+            });
+            $(".btn_a7").click(function () {
+                $(".not_enter").show();
+            });
+            $(".btn_a8").click(function () {
+                $(".a8").show();
+                $(".a9").hide();
+            });
+            $(".btn_a9").click(function () {
+                $(".a9").show();
+                $(".a8").hide();
+            });
+            $(".btn_a10").click(function () {
+                $(".a10").show();
+                $(".a8,.a9").hide();
+            });
+
+            $(".btn_b1").click(function () {
+                $(".bomb_login,.bomb_mask").show();
+            });
+            $(".btn_b2").click(function () {
+                $(".bomb_login,.bomb_mask").hide();
+            });
+            $(".btn_b3").click(function () {
+                $(".b3").show();
+                $(".b4,.b5").hide();
+            });
+            $(".btn_b4").click(function () {
+                $(".b4").show();
+                $(".b3,.b5").hide();
+            });
+            $(".btn_b5").click(function () {
+                $(".b5").show();
+                $(".b3,.b4").hide();
+            });
+
+            $(".btn_c1").click(function () {
+                $(".list-mask").show();
+            });
+            $(".btn_c2").click(function () {
+                $(".list-mask").hide();
+            });
+
+            $(".btn_c3").click(function () {
+                $(".c3").show();
+                $(".c4,.c5,.c6,.c7").hide();
+            });
+            $(".btn_c4").click(function () {
+                $(".c4").show();
+                $(".c3,.c5,.c6,.c7").hide();
+            });
+            $(".btn_c5").click(function () {
+                $(".c5").show();
+                $(".c3,.c4,.c6,.c7").hide();
+            });
+            $(".btn_c6").click(function () {
+                $(".c6").show();
+                $(".c3,.c4,.c5,.c7").hide();
+            });
+            $(".btn_c7").click(function () {
+                $(".c7").show();
+                $(".c3,.c4,.c5,.c6").hide();
+            });
+        });
+    </script>

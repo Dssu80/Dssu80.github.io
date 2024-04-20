@@ -1,0 +1,81 @@
+<!-- 方向提示 -->
+<div class="direction_prompt">
+    <div>
+        <a></a>
+        <span>请切换为直立方向，方可继续操作。</span>
+    </div>
+</div>
+
+<header id="carousel-nav">
+    <div class="container">
+        <h1>
+            <img src="images/svg/logo.svg" alt="">
+        </h1>
+        <a href="javascript:;" class="menu_button">
+            <div class="menuicon"></div>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li class="index"><a href="index.html">赛程 | 奖金</a></li>
+                <li class="rule"><a href="rule.html">积分计算说明</a></li>
+                <li class="god"><a href="god.html">赌神榜</a></li>
+                <li class="whole"><a href="whole.html">全民榜</a></li>
+                <li class="game"><a href="game.html">赌神翻现金</a></li>
+                <li class="gap"></li>
+                <li class="login"><a href="#">登入</a></li>
+                <li class="register"><a href="#">注册</a></li>
+                <li class="service"><a href="#">在线客服</a></li>
+                <li class="sign_out"><a href="#">登出</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="menu_mob">
+        <ul>
+            <li><a href="index.html" class="index">赛程 | 奖金</a></li>
+            <li><a href="rule.html" class="rule">积分计算说明</a></li>
+            <li><a href="god.html" class="god">赌神榜</a></li>
+            <li><a href="whole.html" class="whole">全民榜</a></li>
+            <li><a href="game.html" class="game">赌神翻现金</a></li>
+            <li><a href="https://www.guai999.com/" class="okay" target="_blank">乖乖助手</a></li>
+            <li><a href="#" class="login">登入</a></li>
+            <li><a href="#" class="register">注册</a></li>
+            <li><a href="https://mwejues.fzt9nsow8nv.com/036d8f6dc3ab0acjkfle-keli628162caad0dc9cdb994059b44f2b39b88431271797e53879506d68df4bbdedc" class="service">在线客服</a></li>
+            <li><a href="https://direct.lc.chat/12594579/4" class="service">在线客服(备用)</a></li>
+            <li><a href="https://t.me/+YqWe_J7PiwAyMDM1" class="tg">TG-e世博官方频道</a></li>
+            <li><a href="https://e250222.com:9900/web/simple.php#/aioDownload" class="app">APP下载</a></li>
+            <li><a href="https://campaign.myesball.net/duogold2024/schedule" class="bulletin" target="_blank">电子爆奖夺金榜</a></li>
+            <li><a href="https://campaign.myesball.net/duogold2024/games" class="monopoly" target="_blank">电子大富翁</a></li>
+            <li><a href="https://campaign.myesball.net/five-leagues/event" class="sports" target="_blank">体育竞猜</a></li>
+            <li><a href="#" class="sign_out">登出</a></li>
+        </ul>
+    </nav>
+    <div class="md-overlay"></div>
+</header>
+
+<script>
+  
+  //手機選單
+  $(".menu_button, header .md-overlay, .menu_mob a").click(function () {
+    $("header").toggleClass("active");
+    $(".menu_mob").slideToggle();
+  });
+
+  //錨點移動
+  $(".m_a").click(function() {
+    $("html,body").animate({ scrollTop: $(".s_pot").offset().top }, 800);
+  });
+
+  $(".m_b").click(function() {
+    $("html,body").animate({ scrollTop: $(".self").offset().top }, 800);
+  });
+
+  $(".m_c").click(function() {
+    $("html,body").animate({ scrollTop: $(".rwd_img").offset().top }, 800);
+  });
+
+  $(".m_d").click(function() {
+    $("html,body").animate({ scrollTop: $(".b_pot").offset().top }, 800);
+  });
+
+</script>
+

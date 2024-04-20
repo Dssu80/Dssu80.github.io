@@ -1,0 +1,6441 @@
+/* CSS Document */
+@charset "utf-8";
+
+//匯入
+@import "reset.scss";
+@import "basic.scss";
+
+//----------------------- 共用內容 >>> 開始 ---------------------- 【 共用 】
+
+//色彩
+$color1: #fff;
+$color2: #000;
+$color3: #c3a984;
+$color4: #8d8d8d;
+$color5: #475e75;
+$color6: #d3795e;
+$color7: #656565;
+$color8: #877760;
+$color9: #fc6b6b;
+$color10: #2b2b2b;
+$color11: #62412d;
+$color12: #7086bc;
+$color13: #efddc4;
+$color14: #fcf8c3;
+
+//底色
+$bg-dark1: #d2d2d2;
+$bg-dark2: #f8f5f0;
+$bg-dark3: #5a5a5a;
+$bg-dark4: #343434;
+$bg-dark5: #ead0ad;
+$bg-dark6: #3b4758;
+$bg-dark7: #f2f2f2;
+$bg-dark8: #4458a1;
+$bg-dark9: #1c1c1c;
+$bg-dark10: #f6f6f6;
+$bg-dark11: rgba(255,255,255,0) ;
+
+
+//漸層色
+$gradient: linear-gradient(to bottom,  rgba(0,0,0,1) 15%,rgba(0,0,0,0) 100%);
+
+//文字顏色
+.txt_color_a{
+  color: $color8 !important;
+}
+.txt_color_b{
+  color: $color5 !important;
+}
+.txt_color_c{
+  color: $color9 !important;
+}
+.txt_color_d{
+  color: $color11 !important;
+}
+.txt_color_e{
+  color: $color10 !important;
+}
+
+
+//背景
+.bg_a{
+  background: url(../images/rule/rule_tit_bg.jpg) center;
+  border-radius: 5px;
+}
+.bg_b{
+  background: url(../images/rule/rule_tit_bg.jpg) center;
+  border-radius: 5px 5px 0 0;
+}
+.bg_c{
+  background: $color1;
+  border-radius: 0 0 5px 5px;
+}
+
+.bg_d{
+  background: $bg-dark2;
+}
+
+//隱藏文字 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background:url(../images/svg/q-mark-normal.svg) no-repeat;
+  width: 17px;
+  height: 17px;
+  .tooltiptext{
+    visibility: hidden;
+    width: 280px;
+    background-color: $bg-dark8;
+    color: $color1;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 4;
+    bottom: 126%;
+    font-size:13px;
+    left: 0%;
+    margin-left: -195px;
+    line-height: 25px;
+    padding: 5px;
+  }
+  &:hover{
+    display: inline-block;
+    background:url(../images/svg/q-mark-hover.svg) no-repeat;
+    width: 17px;
+    height: 17px;
+    .tooltiptext{
+      visibility: visible;
+    }
+  }
+}
+
+//側邊選單
+.side_menu{
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  z-index: 10;
+  .pro_1 , .pro_2 , .pro_3 , .pro_4 , .pro_5 , .pro_7{
+    margin-bottom: 10px;
+  }
+  .pro_1 , .pro_2 , .pro_7{
+      width: 85px;
+      height: 85px;
+      position: relative;
+      &:hover{
+          .contain{
+              display: block;
+              z-index: -1;
+          }
+      }
+  }
+  .pro_3 , .pro_4 , .pro_5, .pro_6{
+      width: 85px;
+      height: 85px;
+      right: 0;
+      display: block;
+      cursor: pointer;
+      font-size: 0;
+  }
+  .pro_1{
+      background: url(../images/side_menu/s_menu_01.png) ;
+  }
+  .pro_2{
+      background: url(../images/side_menu/s_menu_02.png) ;
+  }
+  .pro_3{
+      background: url(../images/side_menu/s_menu_03.png) ;
+  }
+  .pro_4{
+      background: url(../images/side_menu/s_menu_04-god.png) ;
+  }
+  .pro_5{
+    background: url(../images/side_menu/s_menu_05-whole.png) ;
+  }
+  .pro_6{
+    background: url(../images/side_menu/s_menu_06-okay.png) ;
+  }
+  .pro_7{
+    background: url(../images/side_menu/s_menu_07-discount.png) ;
+  }
+  .pro_1{
+      .contain{
+          ul{
+              li{
+                  &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+                      background-repeat: no-repeat;
+                  }
+                  &:nth-of-type(1){
+                      background-image: url(../images/side_menu/s_menu_icon_01.png);
+                  }
+                  &:nth-of-type(2){
+                      background-image: url(../images/side_menu/s_menu_icon_01.png);
+                  }
+                  &:nth-of-type(3){
+                      background-image: url(../images/side_menu/s_menu_icon_02.png);
+                  }
+              }
+          }
+      }
+  }
+  .pro_2{
+      .contain{
+          ul{
+              li{
+                  &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+                      background-repeat: no-repeat;
+                  }
+                  &:nth-of-type(1){
+                      background-image: url(../images/side_menu/s_menu_icon_03.png);
+                  }
+                  &:nth-of-type(2){
+                      background-image: url(../images/side_menu/s_menu_icon_04.png);
+                  }
+                  &:nth-of-type(3){
+                      background-image: url(../images/side_menu/s_menu_icon_05.png);
+                  }
+              }
+          }
+      }
+  }
+  .pro_7{
+    .contain{
+        ul{
+            li{
+                &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+                    background-repeat: no-repeat;
+                }
+                &:nth-of-type(1){
+                    background-image: url(../images/side_menu/s_menu_icon_06.png);
+                }
+                &:nth-of-type(2){
+                    background-image: url(../images/side_menu/s_menu_icon_07.png);
+                }
+                &:nth-of-type(3){
+                    background-image: url(../images/side_menu/s_menu_icon_08.png);
+                }
+            }
+        }
+    }
+}
+
+  .contain{
+      display: none;
+      top:0px;
+      right: 0px;
+      width: 320px;
+      height: 150px;
+      position: absolute;
+      padding-right:100px;
+      ul{
+          width: 220px;
+          padding: 10px 20px;
+          background-color: $bg-dark4;
+          border: 1px solid $color13;
+          border-radius: 5px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          position: relative;
+          margin: 0;
+          &::after , &::before{
+              content: " ";
+              border-style: solid;
+              position: absolute;
+          }
+          &::after{
+              border-width: 6px 0 6px 12px;
+              border-color: transparent transparent transparent $bg-dark4;
+              right: -10px;
+              z-index: 1;
+              top:40px;
+          }
+          &::before{
+              border-width: 7px 0 7px 12px;
+              border-color: transparent transparent transparent $color13;
+              right: -12px;
+              top:39px;
+          }
+          li{
+              width: 100%;
+              line-height: 25px;
+              color: $color1;
+              padding: 0px 0 8px 30px ;
+              cursor: pointer;
+              a{
+                  color: $color1;
+                  background-color: #343434;
+              }
+          }
+      }
+  }
+
+  .download{
+    li{
+      height: 35px;
+      position: relative;
+      z-index: 5;
+      overflow: hidden;
+      transition: all 1s;
+      &:hover{
+        height: 135px;
+        .toggle-box{
+          top: 35px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .toggle-box {
+    background: black;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    opacity:0;
+  }
+
+  .qr , .qr_app , .qr_un , .qr_e{
+      width: 90px; 
+      height: 90px; 
+      background-color: $bg-dark4; 
+      border: 1px solid $color13; 
+      z-index: 1; 
+      left: -135px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color1;
+      font-size: 14px;
+      font-weight: bold;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-decoration: none;
+      margin: 0;
+      &::after , &::before{
+          display: none;
+      }
+  }
+
+  .qr{
+    background-image: url(../images/side_menu/qr.png);
+  }
+  .qr_app{
+    background-image: url(../images/side_menu/qr_app.png);
+  }
+  .qr_un{
+    background-image: url(../images/side_menu/qr_un.png);
+  }
+  .qr_e{
+    background-image: url(../images/side_menu/qr_e+.png);
+  }
+
+  .mobile{
+    display: none;
+  }
+
+}
+
+
+
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+@mixin img-change {
+  & img:nth-of-type(1) {
+    display: none;
+  }
+  & img:nth-of-type(2) {
+    display: block;
+  }
+}
+
+@mixin img-hover {
+  & img:nth-of-type(1) {
+    display: none;
+  }
+  & img:nth-of-type(2) {
+    display: block;
+  }
+  &:hover{
+    & img:nth-of-type(1) {
+      display: block;
+    }
+    & img:nth-of-type(2) {
+      display: none;
+    }
+  }
+}
+
+@mixin table {
+  border-collapse: collapse;
+  border: 1px $color2 solid;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  th , td {
+    padding: 8px 5px;
+    font-size: 1.125em;
+  }
+  th {
+    background: $color2;
+    color: $color1;
+  }
+  td {
+    border: 1px $color2 solid;
+  }
+
+  @media (max-width: 500px) {
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+  font-family: "NotoSansSC-Thin";
+  src: url("../fonts/NotoSansSC-Thin.woff") format("woff");
+  font-family: "impact";
+  src: url("../fonts/impact_1.ttf") format("woff");
+  font-family: "Didot";
+  src: url("../fonts/Didot-HTF-B06-Bold.woff") format("woff");
+}
+
+.spacing{
+  padding: 0;
+}
+
+video{
+  width: 100%;
+}
+
+body {
+  font-family: 'microsoft yahei',arial,sans-serif;
+  color: $color2;
+  font-size: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: $bg-dark9;
+}
+
+.container {
+  max-width: 95%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  position: relative;
+}
+
+//彈窗
+.md {
+
+  &.active{
+    .md-modal {
+      visibility: visible;
+    }
+    .md-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    .md-close {
+      visibility: visible;
+      right: -50px;
+    }
+  }
+
+  .md-modal {
+    max-width: 1400px;
+    width: calc(100vw - 150px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 16px 4px rgba( $color2 , .3);
+    .md-content {
+      position: relative;
+      margin: auto;
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .md-content{
+    &::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 6px rgba( $color2 , .3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar{
+      border-radius: 10px;
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba( $color2 , .3);
+      background-color: #555;
+    }
+  }
+
+  .md-close {
+    width: 35px;
+    height: 35px;
+    background: url(../images/svg/closure.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -40px;
+    z-index: 2;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+}
+
+.rule , .finals , .early {
+  .outside{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background: url(../images/reel_bg.jpg);
+    z-index: 1000; 
+    top: 0; 
+  }
+  .md-content {
+    height: calc(100vh - 150px);
+    color: #1f1f1f;
+    padding: 0px 70px;
+    overflow: auto;
+  }
+}
+
+/* 方向提示 */
+.direction_prompt{display:none}
+
+.gotop {
+  position: fixed;
+  bottom: 8%;
+  right: 20px;
+  z-index: 9;
+  display: none;
+  filter: drop-shadow( 0px 5px 8px rgba(0, 0, 0, 7));
+  a {
+    width: 58px;
+    height: 58px;
+    position: relative;
+    @include img-hover();
+  }
+}
+
+//選單底色
+#active-yd-bar{
+  background: $bg-dark3;
+}
+
+#active-rule-bar{
+  background: $bg-dark4;
+  position: fixed;
+  z-index: 5;
+  animation-duration:.3s;
+  animation-name:oxxo;
+}
+
+@keyframes oxxo{
+  from{
+      opacity: 0;
+  }
+  to{
+    opacity: 100;
+  }
+}
+
+header {
+  background:$gradient;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  .container {
+    @include flex();
+    z-index:100;
+    padding: 20px ;
+    img{
+      width: 90px;
+      height: 30px;
+    }
+    .menu {
+      ul {
+        @include flex();
+        .index , .rule , .god , .whole , .game , .login{
+          &::before{
+            content: '';
+            width: 33px;
+            height: 32px;
+          }
+        }
+        .index{
+          &::before{
+            background-image:url(../images/svg/trophy.svg);
+          }
+        }
+        .rule{
+          &::before{
+            background-image:url(../images/svg/calculate.svg);
+          }
+        }
+        .god{
+          &::before{
+            background-image:url(../images/svg/royal-crown.svg);
+          }
+        }
+        .whole{
+          &::before{
+            background-image:url(../images/svg/crown.svg);
+          }
+        }
+        .game{
+          &::before{
+            background-image:url(../images/svg/poker.svg);
+          }
+        }
+        .login{
+          &::before{
+            background-image:url(../images/svg/login.svg);
+          }
+        }
+        .gap{
+          border-left: 1px solid $color1;
+          height: 32px;
+          margin-left: 10px;
+          padding-right: 20px;
+        }
+        li {
+          display:flex ;
+          align-items: center;
+          padding-left: 5px;
+          padding-right: 20px;
+          a {
+            color: $color1;
+            display: block;
+            padding: 0 10px;
+            &:hover {
+              color: $color3;
+            }
+          }
+        }
+      }
+    }
+  }
+  .menu_mob{
+    width: 100%;
+    background: $color1;
+    position: absolute;
+    z-index: 100;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    ul {
+      @include flex();
+      flex-direction: column;
+      padding-top: 5px;
+      li {
+        width: 70%;
+        text-align: center;
+        .index , .rule , .god , .whole , .game , .okay{
+          background: $bg-dark4;
+        }
+        .login , .register , .service , .sign_out , .tg , .app , .bulletin , .monopoly , .sports{
+          background: $color8;
+        }
+        a {
+          border-radius: 30px;
+          color: $color1;
+          display: block;
+          padding: 10px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    display: none;
+  }
+  .md-overlay{
+    z-index: 99;
+  }
+}
+
+//漢堡選單 ST
+.menu_button {
+  display: inline-block;
+  position: relative;
+  padding: 0.7rem 0.5rem;
+  transition: 0.25s;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  .menuicon {
+    position: relative;
+    width: 2rem;
+    height: 0.2rem;
+    background: $color1;
+    transition: 0.2s;
+    border-radius: 2.5rem;
+    &:before , &:after {
+      display: block;
+      content: "";
+      height: 0.2rem;
+      width: 2rem;
+      background: $color1;
+      position: absolute;
+      transition: 0.2s;
+      border-radius: 1rem;
+    }
+    &:before {
+      top: 0.5rem;
+    }
+    &:after {
+      top: -0.5rem;
+    }
+  }
+}
+//漢堡選單 END
+
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  li {
+    width: calc(100% / 4 - 20px);
+    background: $bg-dark1;
+    color: $color2;
+    margin-right: calc(20px * 4 / 3);
+    margin-bottom: 20px;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+  }
+}
+
+.ranking {
+  .ranking_tab {
+    ul {
+      @include flex();
+      li {
+        width: 33.333333%;
+        text-align: center;
+        a {
+          background: $bg-dark1;
+          color: $color2;
+          display: block;
+          font-size: 1.313em;
+          padding: 10px 0;
+        }
+        &.active {
+          a {
+            background: $color2;
+            color: $color1;
+          }
+        }
+      }
+    }
+  }
+  .ranking_table {
+    table {
+      @include table();
+    }
+  }
+}
+
+//影片
+.demo{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  a{
+    position: absolute;
+    bottom: 85px;
+    z-index: 1;
+    &:hover{
+      span{
+        border: 2px solid $color3;
+        &::before{
+          background-color: $color3;
+        }
+      }
+    }
+    span{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 30px;
+      height: 50px;
+      margin-left: -15px;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      &::before{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #fff;
+        border-radius: 100%;
+        animation: sdb10 2s infinite;
+        box-sizing: border-box;
+      }
+      &::after{
+        content: '往下滑';
+        color: $color1;
+        font-size: 10px;
+        letter-spacing: 2px;
+        position: absolute;
+        width: 60px;
+        bottom: -25px;
+        text-align: center;
+      }
+    }
+  }
+  video{
+    width: 100%;
+  }
+  .pic{
+    display: none;
+  }
+}
+
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+//---------------------- 共用內容 >>> 結束 ----------------------- 【 共用 end 】
+
+
+
+//--------------------------------------------- imdex
+
+//獎金
+.bonus{
+  background-image: url(../images/bonus_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  .b_pot{
+    position: absolute;
+    margin: -45px 0 0 0;
+  }
+  .container{
+    width: 70%;
+    padding-top: 40px;
+    .row{
+      justify-content: center;
+      padding-top: 70px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+//獎金榜
+.pic_l , .pic_r{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.pic_l{
+  top: -140px;
+}
+.pic_r{
+  top: -115px;
+}
+
+.card {
+  width: 100%;
+  min-height: 100px;
+  padding: 40px;  
+  border-radius: 5px;
+  border: 2px solid #000;  
+  border-radius: 5px;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    border: 24px solid transparent;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom:10px;
+    border-image:url(../images/index/line_in.png) 24;
+  }
+  .card_main {
+    background-image: url(../images/index/star_point.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .tit{
+      width: 222px;
+      line-height: 58px;
+      margin: 20px auto;
+      border-radius: 100px;
+      font-size: 45px;
+      word-spacing:10px;
+      display: block;
+      text-align: center;
+      color: $color1;
+      background-image: url(../images/index/tit_bg.png) ;
+      background-position: center;
+      background-color: $color2;
+    }
+    li , span{
+      text-align: center;
+    }
+    li{
+      margin: auto;
+      letter-spacing: -1px;
+      &:nth-of-type(1) , 
+      &:nth-of-type(3) , 
+      &:nth-of-type(5)
+      {
+        width: 150px;
+        line-height: 45px;
+        background: $color2;
+        border-radius: 100px;
+        font-size: 32px;
+        margin: 5px auto;
+        color: $color1;
+      }
+      &:nth-of-type(2) , 
+      &:nth-of-type(4) , 
+      &:nth-of-type(6){
+        font-size: 55px;
+        font-family: "NotoSansSC-Thin";
+        span{
+          font-size: 0.5em;
+          font-family: Arial, Helvetica, sans-serif ;
+        }
+      }
+    }
+  }
+}
+.card_text{
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.card_line{
+  width: 0%; 
+  height: 535px; 
+  border-left: 2px solid;
+  border-right: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+    span{
+      &:nth-of-type(1) {
+        border: 8px solid #000;
+        border-radius: 100%;
+        font-size: 0;
+        margin: auto;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after{
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background: $bg-dark2;
+          display: flex;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          border-radius: 100%;
+        }
+      }
+      &:nth-of-type(2) {
+        border-top: 3px solid #000;
+        width: 40px;
+        font-size: 0;
+        display: block;
+        position: absolute;
+      }
+      &:nth-of-type(3) {
+        border-top: 3px solid #000;
+        width: 40px;
+        font-size: 0;
+        display: block;
+        position: absolute;
+        transform:rotate(45deg);
+      }
+      &:nth-of-type(4) {
+        border-top: 3px solid #000;
+        width: 40px;
+        font-size: 0;
+        display: block;
+        position: absolute;
+        transform:rotate(-45deg);
+      }
+    }
+    img{
+      display: none;
+    }
+  }
+
+
+//賽程圖
+.schedule {
+  background: url(../images/index/schedule_bg.jpg);
+  background-attachment:fixed;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 0;
+  li{
+    padding: 5px;
+    background: #fff;
+    display: block;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 8px 0;
+  }
+  ul{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .s_pot{
+    position: absolute;
+    margin: -70px 0 0 0;
+  }
+  .multiple-rule-title{
+    text-decoration:none;
+  }
+  .tooltiptext{
+    background: rgba( $color2 , .7);
+    padding: 15px;
+    border-radius: 0;
+    text-align: left;
+    line-height: 25px;
+  }
+  .col-md-8{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.schedule-title{
+  font-size:18px;
+  text-align: center;
+  display:inline-block;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.schedule-text{
+  font-size: 16px;
+  color:#8e8e8e;
+  font-weight: lighter;
+  br{
+    display: none;
+  }
+}
+
+.schedule-month , .schedule-semi01 , .schedule-semi02 , .schedule-final{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .tooltip{
+    margin-bottom: 7px;
+    margin-left: 7px;
+  }
+}
+.schedule-month {
+  top: -145px
+}
+.schedule-semi01 , .schedule-semi02 {
+  margin-bottom: 240px;
+}
+.schedule-final{
+  margin-bottom: 280px;
+  .tooltip{
+    margin-left: -15px;
+  }
+}
+
+.detail {
+  background:$color3;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  display: block;
+  right: 110px;
+  top: 20%;
+  border-radius: 5px;
+  z-index: 1;
+  cursor: pointer;
+  &:hover{
+    background: #fd492d;
+  }
+}
+
+.ldx {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  &.ldx-breath{
+    animation: ldx-breath 1s infinite linear;
+    margin-bottom: 10px;
+  }
+}
+
+
+.multiple-rule-title{
+  font-family: "NotoSansSC-Thin", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif , LiHei Pro;
+  color: #fbfaf6;
+  display: block;
+  font-size:4em;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.rule-subtitle{
+  color: $color3;
+  font-size: 28px;
+  font-family: "Didot";
+  text-transform: uppercase;
+  word-spacing:0.5em;
+  line-height: 40px;
+}
+
+
+.semi , .semi2 , .final{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  flex-direction:column;
+  justify-content:center;
+  ul{
+    display: flex;
+    width: 90%;
+    align-self: center;
+    display: block;
+    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+  }
+}
+
+.month{
+  li{
+    &:nth-child(1):after , &:nth-child(5):after {
+      position: absolute;
+      right: 0;
+      content: '';
+      display: block;
+      width: 2.7em;
+      height: 25%;
+      border-right: 2px solid $color4;
+      transform: translateX(2px);
+      z-index: -1;
+    }
+    &:nth-child(1):after{
+      top: 12%;
+      border-top: 2px solid $color4;
+      border-top-right-radius: 0.6em;
+    }
+    &:nth-child(5):after{
+      bottom: 12%;
+      border-bottom: 2px solid $color4;
+      border-bottom-right-radius: 0.6em;
+    }
+  }
+}
+.semi {
+  ul{
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 25%;
+      width: 2.7em;
+      z-index: -1;
+      left: 0;
+      border-left: 2px solid $color4;
+      bottom: 25%;
+      border-top: 2px solid $color4;
+      transform: translateX(-1px);
+      transform: translateY(1px);
+      border-top-left-radius: 0.6em;
+    }
+  }
+  li{
+    &::before , &::after{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 25%;
+      width: 2.7em;
+      z-index: -1;
+    }
+    &::before{
+      left: 0;
+      border-left: 2px solid $color4;
+      top: 25%;
+      border-bottom: 2px solid $color4;
+      transform: translateX(-1px);
+      transform: translateY(-1px);
+      border-bottom-left-radius: 0.6em;
+    }
+    &::after{
+      right: 0;
+      border-right: 2px solid $color4;
+      top: 50%;
+      border-top: 2px solid $color4;
+      transform: translateX(2px);
+      border-top-right-radius: 0.6em;
+    }
+  }
+}
+.semi2{
+  ul{
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 2.7em;
+      height: 25%;
+      z-index: -1;
+      left: 0;
+      border-left: 2px solid $color4;
+      bottom: 25%;
+      border-top: 2px solid $color4;
+      transform: translateX(-1px);
+      transform: translateY(1px);
+      border-top-left-radius: 0.6em;
+    }
+  }
+  li{
+    &::before , &::after{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 2.7em;
+      height: 25%;
+      z-index: -1;
+      border-bottom: 2px solid $color4;
+    }
+    &::before{
+      left: 0;
+      border-left: 2px solid $color4;
+      top: 25%;
+      transform: translateX(-1px);
+      transform: translateY(-1px);
+      border-bottom-left-radius: 0.6em;
+    }
+    &::after{
+      right: 0;
+      border-right: 2px solid $color4;
+      bottom: 50%;
+      transform: translateX(2px);
+      border-bottom-right-radius: 0.6em;
+    }
+  }
+}
+.final{
+  ul , li {
+    &::before{
+      position: absolute;
+      left: 0;
+      content: '';
+      display: block;
+      width: 2.6em;
+      height: 20%;
+      border-left: 2px solid $color4;
+      z-index: -1;
+    }
+  }
+  ul{
+    &::before{
+      bottom: 30%;
+      border-top: 2px solid $color4;
+      transform: translateX(-1px);
+      transform: translateY(1px);
+      border-top-left-radius: 0.6em;
+    }
+  }
+  li{
+    &::before{
+      top: 30%;
+      border-bottom: 2px solid $color4;
+      transform: translateX(-1px);
+      transform: translateY(-1px);
+      border-bottom-left-radius: 0.6em;
+    }
+  }
+}
+
+
+.competition{
+  .md-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .bonus_table{
+    width: 390px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img{
+      position: absolute;
+      top: -100px;
+      z-index: 2;
+    }
+    .main{
+      width: 366px; 
+      min-height: 266px; 
+      background: url(../images/index/bonus_table_bg.jpg);
+      padding-top: 40px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      margin: 0 auto;
+      div{
+        width: 324px; 
+        margin: 0 auto;
+        border: 1px solid $color4;
+        background: $color1;
+      }
+      ul{
+        display: flex;
+        li{
+          display: inline-block;
+          line-height: 35px;
+          width: 40%;
+          text-align: center;
+          border: 1px solid $color4;
+          flex: auto;
+          font-weight: bold;
+          font-size: 16px;
+          &:first-child{
+            width: 55%;
+          }
+          &:last-child{
+            color: $color9;
+          }
+          span{
+            font-size: 20px;
+            color: $color9;
+          }
+        }
+      }
+    }
+  }
+
+  .list{
+    width: 100%;
+    min-height: 300px;
+    background-color: $color1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    div{
+      list-style-type: none;
+      line-height: 35px;
+      display: flex;
+      &:first-child{
+        background: $bg-dark6;
+        color: $color1;
+        li{
+          border-left: none;
+        }
+      }
+      &:nth-of-type(even){
+        background: $bg-dark7
+      }
+      li{
+        display: inline-block;
+        text-align: center;
+        border-left: 1px solid $bg-dark1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        br{
+          display: none;
+        }
+        &:nth-of-type(1){
+          width: 20%;
+          border-left: none;
+          font-weight: bold;
+        }
+        &:nth-of-type(2){
+          width: 40%;
+        }
+        &:nth-of-type(3){
+          width: 15%;
+        }
+        &:nth-of-type(4){
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+.interval{
+  margin: 35px 0;
+}
+
+
+//--------------------------------------------- imdex end
+
+
+
+//--------------------------------------------- rule
+
+.r_bg{
+  background: 
+  url(../images/rule/rule_up_bg.png) , 
+  url(../images/rule/rule_bg.jpg) fixed;
+  background-size: 100%;
+}
+
+//積分
+.rule_tit{
+  width: 100%;
+  height: 135px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  .r_menu{
+    width: 100%;
+    margin-top: 70px;
+  }
+  ul{
+    padding: 1%;
+  }
+  li{
+    display: inline-block;
+    width: 18%;
+    font-size: 20px;
+    a{
+      color: $color1;
+      padding: 5px 10px;
+      &:hover{
+        color: $color2;
+        background-color: $bg-dark5;
+        border-radius: 8px;
+      }
+      &:focus{
+        color: $color2;
+        background-color: $bg-dark5;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+//積分計算說明
+.integral{
+  width: 100%; 
+  background-image: url(../images/bonus_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 20px;
+  .anchor{
+    margin-top: -80px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+  }
+  .signify{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+      display: inline-block;
+    }
+    div{
+      text-align: center;
+      display: grid;
+      align-items: center;
+      &:nth-child(1){
+        order: 1;
+        justify-content: end;
+      }
+      &:nth-child(2){
+        order: 2;
+        justify-content: center;
+      }
+      &:nth-child(3){
+        order: 3;
+        justify-content: start;
+      }
+    }
+  }
+  .focus{
+    width: 100%;
+    height: 700px;
+    background: url(../images/rule/focus_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nb_value , .single , .sign_in , .mature{
+      position: absolute; 
+    }
+    .nb_value{
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      img{
+        &:nth-child(1){
+          position: absolute;
+          z-index: 1;
+        }
+        &:nth-child(2){
+          animation: sun 20s linear infinite;
+        }
+      }
+    }
+    .single{
+      left: 0;
+      span{
+        position: absolute;
+        &:nth-child(1){
+          top: 50px;
+          left: -20px;
+        }
+        &:nth-child(2){
+          top: -50px;
+          left: 50px;
+        }
+        &:nth-child(3){
+          top: -80px;
+          right: 0;
+        }
+      }
+    }
+    .sign_in{
+      right: 0; 
+      top:-10px;
+      span{
+        position: absolute;
+        &:nth-child(1){
+          top: 50px;
+          left: -20px;
+        }
+        &:nth-child(2){
+          bottom: 70px;
+          right: 0;
+        }
+      }
+    }
+    .mature{
+      right: 90px; 
+      bottom: 40px;
+      z-index: 2;
+      span{
+        position: absolute;
+        &:nth-child(1){
+          top: 50px;
+          left: -20px;
+        }
+        &:nth-child(2){
+          top: -10px;
+          right: -50px;
+        }
+      }
+    }
+  }
+  .headline{
+    width: 100%; 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ul{
+      width: 100%; 
+      display: grid; 
+      justify-content: center;
+      justify-items: center;
+      li{
+        line-height: 35px;
+        letter-spacing: 2px;
+        font-size: 15px;
+        &:nth-child(1){
+          font-size: 25px;
+          font-weight: bold;
+          padding: 15px 0;
+          color: $color9;
+        }
+        &:nth-child(2){
+          width: auto;
+          padding: 0 15px;
+          border-radius: 30px;
+          font-weight: bold;
+          color: $color1;
+          background: $bg-dark9;
+        }
+      }
+    }
+  }
+  .notice{
+    line-height: 30px;
+    padding:10px;
+    br{
+      display: none;
+    }
+    ul{
+      li{
+        display: inline-block;
+        text-align: justify;
+        &:nth-of-type(1){
+          padding-left: 70px;
+          position: relative;
+          width: 40%;
+          float: left;
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+          }
+        }
+        &:nth-of-type(2){
+          width: 60%;
+          padding: 5px;
+          margin: 10px 0;
+        }
+        &:nth-of-type(3){
+          width: 100%;
+          font-size: 16px;
+          color: $color11;
+          padding: 5px;
+        }
+      }
+      &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+        .tit{
+          font-size: 28px;
+          letter-spacing: 5px;
+          &::before{
+            content: " ";
+            width: 53px;
+            height: 53px;
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: 5px;
+            top: 5px;
+          }
+        }
+      }
+      &:nth-of-type(1){
+        .tit{
+          &::before{
+            background-image: url(../images/rule/god_img_1.png);
+          }
+        }
+      }
+      &:nth-of-type(2){
+        .tit{
+          &::before{
+            background-image: url(../images/rule/god_img_2.png);
+          }
+        }
+      }
+      &:nth-of-type(3){
+        .tit{
+          &::before{
+            background-image: url(../images/rule/god_img_3.png);
+          }
+        }
+      }
+    }
+    li{
+      font-size: 25px;
+      border-radius: 5px;
+      padding: 15px;
+      &:nth-of-type(2){
+        background: $bg-dark2;
+        color: $color8;
+      }
+    }
+    .mark{
+      color: $color2;
+    }
+  }
+}
+
+
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.integral_title{
+  padding: 15px;
+  display: block;
+  margin: auto;
+  .basic , .double , .finally{
+    display: inline-flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: $color1;
+    span{
+      margin: 0 5px;
+    }
+  }
+  .list_left , .list_right{
+    padding-left: 60px;
+    font-size: 30px;
+    color: $color1;
+    text-align: left;
+    &::before{
+      content: "";
+      width: 47px;
+      height: 38px;
+      position: absolute;
+      left: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .list_left{
+    &::before{
+      background-image: url(../images/rule/integral_crown_l.png);
+    }
+  }
+  
+  .list_right{
+    &::before{
+      background-image: url(../images/rule/integral_crown_r.png);
+    }
+  }
+}
+
+.expanse{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.chief{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+//倍數 ( 單注 . 簽到 . 成長 )
+.multiple-rule{
+  background-size: 100%;
+  .container{
+    max-width: 1560px;
+  }
+}
+
+.multiple-rule-space{
+  padding-top: 50px;
+}
+
+.multiple-rule-title{
+  font-size:55px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-decoration: underline;
+	text-underline-offset: 15px;
+	text-decoration-thickness: 5px;
+  text-decoration-color: $bg-dark5;
+}
+
+.multiple-rule-text{
+  padding: 20px;
+  display: block;
+  font-weight:600;
+  color: $color1;
+  letter-spacing: 3px;
+  .bold_a{
+    color: $color3;
+  }
+  .bold_b{
+    color: $color9;
+  }
+  br{
+    display: none;
+  }
+  span{
+    display: inline-block;
+    line-height: 30px;
+  }
+}
+
+.multiple-rule-text-bottom{
+  font-weight:600;
+  line-height: 25px;
+  padding-top: 30px;
+  color: $color1;
+  ol{
+    li{
+      padding-left: 15px;
+    }
+  }
+}
+
+.line {
+  text-decoration-color: $color12 !important;
+}
+
+.sign-rule , .betting-rule {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.sign-rule {
+  img{
+    margin: 0 18px;
+  }
+}
+
+.betting-rule {
+  img{
+    margin: 0 auto;
+  }
+}
+
+.sign-main{
+  width: 16%;
+}
+
+.rank-main{
+  width: 18%;
+}
+.rank-arrow{
+  padding: 5px;
+  width: 4%;
+}
+
+.come-in {
+  transform: translateY(-200px);
+  opacity: 0;
+  animation: come-in 0.8s ease forwards;
+  &:nth-child(1) , &:nth-child(2) {
+    animation-duration: 1s;
+  }
+  &:nth-child(3) , &:nth-child(4) {
+    animation-duration: 1.5s;
+  }
+  &:nth-child(5) , &:nth-child(6) {
+    animation-duration: 2s;
+  }
+  &:nth-child(7) , &:nth-child(8) {
+    animation-duration: 2.5s;
+  }
+  &:nth-child(9) {
+    animation-duration: 3s;
+  }
+}
+
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.exm{
+  max-width: 1200px;
+  margin: 0 auto;
+  a{
+    background: #000;
+    color:#fff;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+    width: 168px;
+    display: inline-block;
+    &:hover{
+      background: #fec08e;
+      color:#fff;
+      padding: 5px 5px 5px 15px;
+      border-radius: 5px;
+      width: 168px;
+      display: inline-block;
+    }
+  }
+}
+
+
+.exm-box , .exm-box2 , .exm-box3{
+  display: none;
+  padding: 20px;
+  background: $bg-dark2;
+  border-radius: 10px;
+}
+.exm-title{
+  font-weight: bold;
+  display: inline-block;
+  font-size: 3em;
+}
+.exm-tit-bg{
+  background: url(../images/rule/rule-tit-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+}
+.exm-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.member {
+  display: flex;
+  align-items: center;
+}
+.member-icon {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div{
+    &:nth-of-type(2){
+      color: $color8;
+    }
+  }
+}
+
+
+.rule-s-text{
+  width: auto;
+  .bold{
+    font-weight: bold ;
+    color: $color9;
+  }
+}
+
+
+#grow-rule{
+  height: 480px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 95px 20px 0 20px;
+  overflow: hidden;
+  tbody{
+    --secondary-axes-width:2px;
+    --secondary-axes-color:rgba(147,147,147);
+    th{
+      z-index: 1;
+      background:url(../images/rule/rule_bg.jpg) ;
+      background-attachment: fixed;
+      background-size: cover;
+      color: $color1;
+    }
+  }
+}
+
+#grow-rule2{
+  height: 800px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding:20px 30px 0 0;
+  overflow: hidden;
+  tbody{
+    th{
+      z-index: 1;
+      background:url(../images/rule/rule_bg.jpg) ;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+  .last-month , .this-month {
+    .data{
+      position: absolute;
+      left: 5px;
+      bottom:auto;
+    }
+  }
+  .data-text{
+    .tooltiptext{
+      width:60px;
+      padding: 5px 0;
+      margin-left: -25px;
+      font-size: 0.8em;
+    }
+    .tooltiptext2{
+      width:60px;
+      padding: 5px 0;
+      margin-left: -25px;
+      font-size: 0.8em;
+    }
+  }
+  .grow-rule-box{
+    margin-left: 80px;
+  }
+}
+
+.grow-rule-moblie{
+  display: none;
+}
+
+.last-month {
+  background: $color7 !important;
+  color:#fff;
+  padding: 5px !important;
+  .data{
+    position: absolute;
+    bottom: 25px;
+  }
+}
+
+.this-month {
+  background: $bg-dark5 !important;
+  color:#fff;
+  padding: 5px !important;
+  .data{
+    position: absolute;
+    bottom: 25px;
+    color: $color2;
+  }
+}
+
+.charts-css.area.show-10-secondary-axes , 
+.charts-css.column.show-10-secondary-axes ,
+.charts-css.line.show-10-secondary-axes{
+  &:not(.reverse) {
+    tbody{
+      tr{
+        background-size:100% 19.9% !important;
+      }
+    }
+  }
+}
+
+.charts-css.column.data-spacing-5{
+  tbody{
+    tr{
+      padding-inline-start: 80px !important;
+      padding-inline-end: 80px !important;
+    }
+  }
+}
+
+.grow-up {
+  animation: moving-bars linear;
+}
+
+@keyframes moving-bars {
+  0%  { transform: translateY( 100% ); }
+  15% { transform: translateY( 0 ); }
+}
+.grow-up2 {
+  animation: moving-bars2 linear;
+}
+
+@keyframes moving-bars2 {
+  0%  { transform: translateX( -100% ); }
+  15% { transform: translateX( 0 ); }
+}
+
+.grow-rule-box{
+  &:nth-child(1){
+    .this-month{
+      animation-duration: 3s;
+    }
+  }
+  &:nth-child(2){
+    .this-month{
+      animation-duration: 5s;
+    }
+  }
+  &:nth-child(3){
+    .this-month{
+      animation-duration: 7s;
+    }
+  }
+  &:nth-child(4){
+    .this-month{
+      animation-duration: 9s;
+    }
+  }
+  &:nth-child(5){
+    .this-month{
+      animation-duration: 11s;
+    }
+  }
+  &:nth-child(6){
+    .this-month{
+      animation-duration: 13s;
+    }
+  }
+  &:nth-child(7){
+    .this-month{
+      animation-duration: 15s;
+    }
+  }
+}
+
+.data-text {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  .tooltiptext{
+    width: 80px;
+    background-color: $color6;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -40px;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -8px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: $color6 transparent transparent transparent;
+    }
+    .text-m{
+      font-size:0.9em;
+      font-weight: bold;
+    }
+    .text-b{
+      font-size:1.6em;
+      font-weight: bold;
+    }
+  }
+}
+
+
+//--------------------------------------------- rule end
+
+
+
+//--------------------------------------------- god . whole 
+
+
+/* god 賭神 */
+.rank-bg{
+  background: url(../images/god/god_bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top:70px;
+  .container{
+    max-width: 1800px;
+  }
+}
+
+.rank-space{
+  padding-top: 20px;
+  position: relative;
+}
+
+/* TIME */
+.time-area{
+  position: absolute;
+  left: 8.5%;
+  padding:5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  color: $color1;
+  .title{
+    span{
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.timer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    width: 60px;
+  }
+}
+
+.timer__container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: $color1;
+  margin:4%;
+  height: 100%;
+  background-color: $color2;
+  padding:3px;
+  border-radius: 10px;
+  border: 1px solid $color3;
+}
+
+.timer__label{
+  position: absolute;
+  bottom:-20px;
+  color: $color1;
+  font-size: 12px;
+}
+
+/* 積分內容 */
+.member-rank{
+  position: relative;
+  padding: 50px 0 0 0 ;
+  .tooltip{
+    background: url(../images/svg/r-mark-normal.svg);
+    margin-bottom: -2px;
+    &:hover{
+      background: url(../images/svg/r-mark-hover.svg);
+    }
+    .tooltiptext{
+      font-weight:initial;
+      width: 200px;
+    }
+  }
+  .marvel{
+    width: 17px;
+    height: 17px;
+    display:inline-block;
+    background: url(../images/svg/marvel.svg);
+    margin: -4px 2px;
+  }
+}
+
+.rank-title{
+  font-size:52px;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: $bg-dark5;
+  color: $color1;
+}
+
+.rank-text{
+  padding: 10px;
+  display: block;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  color: $color1;
+}
+
+
+.description_title{
+  width: 329px;
+  height: 97px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  color: $color1;
+  padding: 25px;
+  font-size: 15px;
+  text-align: left;
+  span{
+    display: block;
+    line-height: 22px;
+    &:nth-of-type(2){
+      font-weight: bold;
+      color: $color9;
+    }
+  }
+}
+
+.g_bg{
+  background: url(../images/god/description_bg_g.png);
+}
+
+.w_bg{
+  background: url(../images/whole/description_bg_w.png);
+}
+
+/* 下拉 */
+.rank-info {
+  padding: 2px;
+  display: none;
+  width: 100%;
+  .ranking_table_title{
+    display: flex !important;
+    align-items: flex-end;
+    li{
+      &:nth-child(1) , &:nth-child(2) , 
+      &:nth-child(3) , &:nth-child(4) , 
+      &:nth-child(5)  {
+        width: 20%;
+        flex: auto;
+      }
+      &:nth-child(1) , &:nth-child(2) {
+        div{
+          position: absolute;
+          margin-left: 140px;
+        }
+      }
+    }
+  }
+}
+
+.tit_bg_w{
+  background: $bg-dark3 !important;
+}
+
+.tit_bg_g{
+  background: $color8 !important;
+}
+
+.line_w , .line_w li{
+  border: 1px solid $bg-dark3 ;
+}
+
+.line_g , .line_g li{
+  border: 1px solid $color8 ;
+}
+
+.ranking-text {
+  color: $color1;
+  line-height: 60px;
+  br{
+    display: none;
+  }
+}
+
+.member-title{
+  position: absolute;
+  z-index: 3;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.member-login {
+  border:2px solid $color3;
+  background: url(../images/rank-member-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 570px;
+  position: relative;
+  img{
+    z-index: 1;
+    display: block;
+    margin: 0 auto; 
+  }
+  .moving{
+    width: 100%; 
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    .title{
+      line-height: 40px;
+      letter-spacing: 5px;
+      color: $color1;
+      display: block;
+      padding-top: 20px;
+    }
+  }
+  .member-rank-inner{
+    width: 100%;
+    min-height: 140px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .login-btn{
+    display: block;
+    width: 45%;
+    margin: 10px auto;
+    color:#fff;
+    line-height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba( $color5, .5);
+    backdrop-filter: blur(6px);
+    &:hover{
+      background-color: rgba( $color5, .8);
+    }
+  }
+}
+
+.member-main{
+  width: 100%; 
+  z-index: 1; 
+  position: relative; 
+}
+
+.not_enter{
+  width: 100%; 
+  height: 100%; 
+  background: rgba( $bg-dark9, 1); 
+  z-index: 2; 
+  position: absolute; 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: $color1;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  padding: 10px;
+  img{
+    padding-bottom: 10px;
+  }
+  div{
+    padding-top: 10px;
+    color: $color13;
+    p{
+      display: inline-block;
+      font-size: 28px;
+      padding: 0 5px;
+      color: $color9;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: $color13;
+    }
+  }
+}
+
+.login_content{
+  width: 100%;
+  font-weight: bold;
+  position: relative;
+  div{
+    ul{
+      width: 45%;
+      display: inline-block;
+      li{
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+    .ranking_trophy , .ranking_bonus{
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 8px;
+    }
+  }
+  span{
+    display: inline-block;
+  }
+  .procession_1{
+    padding-top: 50px;
+    line-height: 25px;
+    font-size: 16px;
+    li{
+      list-style-type: none;
+      &:nth-child(2){
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+    span{
+      font-size: 20px;
+    }
+  }
+  .procession_2{
+    ul{
+      position: relative;
+      left: 25px;
+      margin-left: 5px;
+      li{
+        &:nth-of-type(1){
+          padding-left: 35px;
+        }
+      }
+      .short{
+        font-size: 24px;
+      }
+    }
+  }
+  .procession_3 , .procession_5{
+    display: flex;
+    padding: 0 22px;
+    position: relative;
+    ul{
+      flex: auto;
+      width: 20%;
+    }
+    .symbol{
+      padding-top: 40px;
+    }
+  }
+  .procession_4 , .procession_6{
+    width: 100%;
+    ul{
+      width: 100%;
+      li{
+        &:nth-of-type(1){
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+  .procession_3 ,.procession_4 , .procession_5 , .procession_6{
+    ul{
+      &:nth-of-type(1) , &:nth-of-type(2){
+        div{
+          position: absolute;
+          margin-left: 140px;
+        }
+      } 
+    }
+  }
+  .digital{
+    width: 90%;
+    line-height: 40px;
+    background: $color1;
+    display: inline-block;
+    flex: auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .short{
+    width: 60% !important;
+    position: relative;
+  }
+  .information{
+    font-size: 12px;
+  }
+  .right{
+    position: absolute;
+    right: 40px;
+    color: $color9;
+  }
+  .rendition{
+    font-size: 15px !important;
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+    padding: 0 15px 15px 15px;
+  }
+}
+
+
+/* 按鈕 */
+.login-btn {
+  cursor: pointer;
+  img{
+    padding: 2px;
+    margin: 0 5px;
+  }
+}
+
+.login-text{
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.list-btnarea{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.list-btnarea {
+  br{
+    display: none;
+  }
+}
+
+.list-icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+
+.semi-list , .final-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  letter-spacing: 2px;
+  width: 45%;
+  border-radius: 100px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.semi-list{
+  background-color: rgba( $color7, .5);
+  backdrop-filter: blur(6px);
+  &:hover{
+    background-color: rgba( $color7, .8);
+  }
+}
+
+.final-list{
+  background-color: rgba( $color3, .5);
+  backdrop-filter: blur(6px);
+  &:hover{
+    background-color: rgba( $color3, .8);
+  }
+}
+
+.final-mask{
+  position: relative;
+  pointer-events: none;
+  overflow: hidden;
+  filter: grayscale(100%);
+  &::before{
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background: rgba( $color2 , .5);
+    display: block;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+/* 列表 */
+.month-rank{
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  .ranking_table_title{
+    width: 100%;
+    color: $color1;
+    p{
+      display: inline-block;
+      br{
+        display: none;
+      }
+    }
+    li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 !important;
+      line-height: 40px;
+      span{
+        &:nth-of-type(2){
+          color: #000;
+          width: 100%; 
+          line-height: 55px;
+          background-color:#FFF; 
+        }
+      }
+    }
+    .tooltip{
+      margin-bottom: -2px;
+      .tooltiptext{
+        width: 220px;
+      }
+    }
+    .coin{
+      width: 20px; 
+      margin: -3px 0 0 0;
+    }
+  }
+  .rank-top3{
+    margin: -18px 0;
+  }
+  .rank-num_w , .rank-num_g{
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 10px;
+    letter-spacing: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rank-num_w{
+    background-image: url(../images/svg/num-month_w.svg);
+  }
+
+  .rank-num_g{
+    background-image: url(../images/svg/num-month_g.svg);
+  }
+
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  div{
+    &:nth-child(even){
+      background: $color1;
+    }
+    &:nth-child(odd){
+      background: $bg-dark10;
+    }
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li{
+      display: inline-block;
+      padding: 18px 0;
+      height: 100%;
+      &:nth-child(1) , &:nth-child(2){
+        width: 10%;
+      }
+      &:nth-child(3) , &:nth-child(5){
+        width: 20%;
+      }
+      &:nth-child(4){
+        width: 30%;
+      }
+      &:nth-child(6){
+        width: 10%;
+        position: relative;
+      }
+      .arrow{
+        background: url(../images/svg/arrow-down.svg);
+        display:inline-block;
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top:50%;
+        left:30%;
+        transform: translateX(-50%) translateY(-50%);
+        &.active{
+          background: url(../images/svg/arrow-up.svg);
+          display:inline-block;
+          width: 27px;
+          height: 27px;
+          position: absolute;
+          top:50%;
+          left:30%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.item{
+  display:none;
+}
+
+.load-more{
+  background-color: $bg-dark3;
+  color: $color1;
+  padding:3px 10px;
+  border-radius:4px;
+  font-size:15px;
+  letter-spacing: 3px;
+  margin:10px 0;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-color: $color3;
+  }
+}
+
+.list-mask{
+  width: 100%; 
+  height: 100%; 
+  z-index: 1; 
+  background: rgba( $bg-dark9, 1) !important;
+  position: absolute;
+  color: $color1;
+  font-size: 30px;
+  line-height: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+/* 場次 */
+.select-bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  position: absolute;
+  right: 5px;
+  top:30px;
+  transform: translateY(-50%);
+  z-index: 1;
+  span{
+    &:nth-child(1){
+      font-size:1.4em;
+      margin-right:20px;
+      color: $color1;
+    }
+  }
+}
+
+/* Reset Select */
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #fec08e;
+  border-radius: 0.5em;
+  background: $color1;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color: #000000;
+  cursor: pointer;
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 15em;
+  height: 2.5em;
+  line-height: 30px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0.5em;
+  &::after{
+    content: '\25BC';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color:#505050;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+  }
+}
+
+.select-month{
+  padding-top: 20px;
+  .my_game{
+    padding-top: 10px;
+  }
+}
+
+/* 頁碼 */
+.pagination{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul{
+    padding:30px 0;
+    li{
+      display: inline;
+      a{
+        color: $color1;
+        float: left;
+        padding: 8px 15px;
+        text-decoration: none;
+        margin: 0 2px;
+        &:hover{
+          &:not(.active){
+            border-radius: 5px;
+            background-color: #ddd;
+            color: $color2;
+          }
+        }
+        &.active{
+          border-radius: 5px;
+          background-color: $bg-dark5;
+          color: $color2;
+        }
+      }
+      &:first-of-type , &:last-of-type {
+        a{
+          font-weight: bold;
+          color: $color3;
+        }
+      }
+    }
+  }
+}
+
+.page_color{
+  ul{
+    li{
+      a{
+        color: $color2;
+        &:hover{
+          &:not(.active){
+            background-color: #ddd;
+            color: $color2;
+          }
+        }
+        &.active{
+          background-color: $color8;
+          color: $color1;
+        }
+      }
+      &:first-of-type , &:last-of-type {
+        a{
+          font-weight: bold;
+          color: $color8;
+        }
+      }
+    }
+  }
+}
+
+/* 遮罩 */
+.bomb-rank{
+  position: relative;
+  .ranking_table_title{
+    width: 100%;
+    color: $color1;
+    li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px 0;
+      line-height: 20px;
+      br{
+        display: none;
+      }
+      span{
+        &:nth-of-type(2){
+          color: #000;
+          width: 100%; 
+          line-height: 55px;
+          background-color:#FFF; 
+        }
+      }
+    }
+  }
+
+  .rank-num_w , .rank-num_g{
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 10px;
+    letter-spacing: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .rank-num_w{
+    background-image: url(../images/svg/num-month_w.svg);
+  }
+
+  .rank-num_g{
+    background-image: url(../images/svg/num-month_g.svg);
+  }
+
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    br{
+      display: none;
+    }
+    &:nth-child(even){
+      background: $color1;
+    }
+    &:nth-child(odd){
+      background: $bg-dark10;
+    }
+    li{
+      display: inline-block;
+      padding: 18px 0;
+      height: 100%;
+      &:nth-child(1){
+        width: 15%;
+      }
+      &:nth-child(2)
+      {
+        width: 30%;
+      }
+      &:nth-child(3){
+        width: 40%;
+      }
+      &:nth-child(4){
+        width: 15%;
+      }
+    }
+  }
+}
+
+.title-finals{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    margin-top: -15px;
+  }
+}
+
+.bomb_title{
+  width: 100%; 
+  min-height: 120px;
+  color: $color2;
+  text-align: center;
+  .time-area{
+    width: 300px;
+    margin: auto;
+    position: inherit;
+    color: $color2;
+    font-weight: bold;
+    .timer__label{
+      color: $color2;
+    }
+  }
+}
+
+.bomb_login{
+  .login-btn{
+    display: block;
+    width: 25%;
+    margin: 10px auto;
+    color:#fff;
+    line-height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba( $color5, .5);
+    backdrop-filter: blur(6px);
+    &:hover{
+      background-color: rgba( $color5, .8);
+    }
+  }
+}
+
+.bomb_information{
+  width: 100%;
+  min-height: 180px;
+  background: $color1;
+  position: relative;
+  .bomb_mask{
+    width: 100%; 
+    height: 100%; 
+    background:rgba( $bg-dark9, 1); 
+    position: absolute;
+    z-index: 1;
+    color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    span{
+      text-align: left;
+      margin: 0 10px;
+      line-height: 30px;
+      letter-spacing: 2px;
+    }
+  }
+  .in_content{
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    div{
+      letter-spacing: 1px;
+      width: 49%;
+      display: inline-block;
+      &:nth-of-type(1){
+        line-height: 35px;
+        font-size: 14px;
+        width: 100%;
+        br{
+          display: none;
+        }
+        span{
+          font-size: 18px;
+        }
+      }
+      ul{
+        width: 100%;
+        position: relative;
+        left: 20px;
+        margin-left: 5px;
+        li{
+          line-height: 30px;
+          text-align: left;
+        }
+        .space_left{
+          padding-left: 100px;
+          br{
+            display: none;
+          }
+        }
+        .short{
+          font-size: 24px;
+        }
+      }
+      .ranking_trophy , .ranking_bonus{
+        display: block;
+        position: absolute;
+      }
+    }
+  
+    span{
+      display: inline-block;
+      padding-left: 4px;
+    }
+    .digital{
+      width: 90%;
+      line-height: 48px;
+      background: $color1;
+      display: inline-block;
+      flex: auto;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      border: 1px solid $bg-dark1;
+    }
+    .short{
+      width: 60% !important;
+      position: relative;
+    }
+    .tick , .take{
+      padding-left: 60px;
+      padding-top: 15px;
+      line-height: 25px;
+      position: relative;
+      img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+    .tick{
+      color: #30d19f;
+    }
+    .take{
+      color: $color9;
+      p{
+        display: inline-block;
+        color: $color2;
+      }
+    }
+  }
+}
+
+/* whole 全民 */
+.whole-bg{
+  background: url(../images/whole/whole_bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top:70px;
+  .container{
+    max-width: 1800px;
+  }
+}
+
+.float{
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  bottom: 20%;
+  .md-close{
+    right: 8px;
+  }
+  a{
+    img{
+      filter: drop-shadow(0px 12px 7px rgba( $color2 , 0.7))
+    }
+  }
+}
+
+.finals , .early , .record {
+  .md-modal{
+    top:53%;
+  }
+}
+
+
+//--------------------------------------------- god . whole end
+
+
+//--------------------------------------------- game
+
+.ga_bg{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+  radial-gradient( ellipse at center, rgba( $bg-dark9, .8) 50%, rgba( $bg-dark9, 0) 100%),
+  url(../images/game/game_bg.jpg);
+  background-attachment: fixed;
+}
+
+//標題
+.main_label{
+  padding-top: 70px;
+  .container{
+    width: 1400px;
+    padding: 10px;
+    text-align: center;
+  }
+  .time-area{
+    padding-top: 30px;
+  }
+}
+
+.step{
+  width: 100%; 
+  height: auto; 
+  text-align: left;
+  img{
+    padding-top: 20px;
+  }
+  .procedure{
+    font-size: 14px;
+    font-weight: 600;
+    color: $bg-dark5;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    .dart{
+      padding-right: 10px;
+      &:after{
+        content: "";
+        border-top: 8px solid $bg-dark11;
+        border-bottom: 8px solid $bg-dark11;
+        border-left: 15px solid $color12;
+        display:block;
+        margin-left: 5px;
+      }
+    }
+    div{
+      padding: 5px 0;
+      &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+        display: flex;
+        align-items: center;
+        div{
+          display: block;
+          float: left;
+          &:nth-of-type(1){
+            text-align: center;
+            border: 2px solid $bg-dark5;
+            border-radius: 100%;
+            width: 45px;
+            height: 45px;
+            padding: 4px;
+            span{
+              display: block;
+              &:first-child{
+                font-size: 12px;
+              }
+              &:last-child{
+                font-size: 16px;
+                color: $color1;
+                position: relative;
+                top:-2px
+              }
+            }
+          }
+          &:nth-of-type(2){
+            padding: 5px;
+
+            span{
+              display: block;
+              &:first-child{
+                font-size: 16px;
+              }
+              &:last-child{
+                color: $color1;
+              }
+            }
+          }
+          p{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.illustrate{
+  padding-top: 25px;
+  a{
+    display: block;
+    padding-left: 30px;
+  }
+}
+
+.activity , .prize{
+  width: 148px;
+  line-height: 42px;
+  border: 2px solid $color3;
+  border-radius: 100px;
+  color: $color1;
+  margin: 5px auto;
+  position: relative;
+  text-shadow: 0px 2px 2px $color2;
+  cursor: pointer;
+  &::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+  }
+}
+
+.activity{
+  &:hover{
+    background-color: $color5;
+  }
+  &::after{
+    background-image: url(../images/game/activity_img.png);
+  }
+}
+
+.prize{
+  &:hover{
+    background-color: $color8;
+  }
+  &::after{
+    background-image: url(../images/game/prize_img.png);
+  }
+}
+
+.legend{
+  font-weight: bold;
+  letter-spacing: 1px;
+  ul{
+    margin: 0 10px;
+    li{
+      line-height: 25px;
+      &:first-child{
+        font-size: 20px;
+        line-height: 50px;
+      }
+      p{
+        display: inline-block;
+        color: $color9;
+      }
+    }
+  }
+  ol{
+    li{
+      padding-left: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+.record{
+  .md-modal{
+    width: auto;
+    .main{
+      width: 500px; 
+      background: $bg-dark2;
+      border-radius: 10px;
+      padding: 20px 0;
+      .prize_tit{
+        width: 100%;
+        font-size: 38px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        position: absolute;
+        text-align: center;
+        margin: -95px 0;
+        color: $color1;
+      }
+      .login_content{
+        text-align: center;
+        .title{
+          font-size: 24px;
+          line-height: 45px;
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          color: $color1;
+          background: $bg-dark6;
+          span{
+            color: $color9;
+            font-size: 32px;
+            margin: 0 10px;
+          }
+          img{
+            margin-right: 10px;
+          }
+        }
+        .procession_1{
+          font-size: 16px;
+          padding:10px 0;
+          span , a{
+            font-size: 20px;
+          }
+          br{
+            display: none;
+          }
+          .bottom_line{
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 3px;
+            text-decoration-color: $color9;
+          }
+        }
+        .sheet{
+          width: 85%;
+          height: auto;
+          margin: auto;
+          .caption{
+            font-size: 16px;
+            background: $bg-dark6 !important;
+            color: $color1;
+            position: fixed;
+            width: inherit;
+            span{
+              line-height: 45px;
+              width: 45%;
+            }
+          }
+          .content{
+            height: auto;
+            padding-top: 45px;
+            overflow-x: hidden;
+            &::-webkit-scrollbar-track{
+              box-shadow: inset 0 0 6px rgba( $color2 , .3);
+              border-radius: 10px;
+              background-color: #F5F5F5;
+            }
+            &::-webkit-scrollbar{
+              border-radius: 10px;
+              width: 8px;
+            }
+            &::-webkit-scrollbar-thumb{
+              border-radius: 10px;
+              box-shadow: inset 0 0 6px rgba( $color2 , .3);
+              background-color: #555;
+            }
+            div{
+              font-size: 18px;
+              &:nth-of-type(odd){
+                background: $bg-dark7;
+              }
+              &:nth-of-type(even){
+                background: $color1;
+              }
+              span{
+                width: 45%;
+                text-align: center;
+                line-height: 40px;
+              }
+            }
+          }
+          .sense{
+            text-align: left;
+            line-height: 25px;
+            padding-top: 10px;
+            background: transparent !important;
+            ol{
+              font-size: 16px;
+              li{
+                padding-left: 10px;
+                a{
+                  display: inline-block;
+                  color: $color9;
+                  font-weight: bold;
+                  &:hover{
+                    color: $color6;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//跑馬燈
+.marquee{
+  width: 100%; 
+  background-color: rgba( $color2, .6);
+  margin-top: 5px;
+  display: block;
+  #scrollobj , marquee {
+    //white-space: nowrap;
+    //overflow: hidden;
+    width: 100%;
+    color: $color1;
+    a{
+      margin: 0 10px;
+      line-height: 50px;
+      .date{
+        color: $color3;
+      }
+      .account , .amount{
+        color: $color9;
+      }
+    }
+  }
+}
+
+
+/* 小遊戲 */
+.poker{
+  position: relative;
+  overflow: hidden;
+  .game_mask{
+    width: 100%; 
+    height: 100%; 
+    background: rgba( $color2 , .8); 
+    position: absolute; 
+    z-index: 6;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: $color1;
+    span{
+      text-align: center;
+      font-size: 35px;
+      letter-spacing: 3px;
+    }
+    img{
+      display: block;
+      margin: auto;
+      padding-bottom: 15px;
+    }
+    p{
+      display: inline-block;
+      color: $color3;
+      margin: 0 5px;
+    }
+  }
+  .container{
+    max-width: 1400px;
+    padding-top:50px;
+    padding-bottom:100px;
+  }
+  .md-modal{
+    max-width:100%;
+  }
+  .md-content{
+    height: calc(100vh - 0px);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color2;
+    display: flex;
+    align-items: center;
+    ul{
+      padding: 13px;
+      li{
+        font-size: 1.125em;
+        font-weight: bold;
+        line-height: 30px;  
+      }
+    }
+  }
+}
+
+.poker-result {
+  .login , .non-target , .win , .lose , .already , .unstable {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .button{
+      width: 140px;
+      font-size:26px;
+      font-weight: bold;
+      line-height: 50px;
+      display: inline-block;
+      z-index: 999;
+      margin: auto;
+      position: relative;
+      text-align: center;  
+      color: $color2;
+      letter-spacing: 2px;
+      border-radius: 100px;
+      background:linear-gradient(to bottom, #f8f4f1 0%,#e7d9ce 100%);
+      box-shadow: 0 -4px 0px 1px $color2;
+      &:hover{
+        color:#fff;
+        background:linear-gradient(to bottom, #e7d9ce 0%,#ddbc5b 100%); 
+      }
+    }
+    .join{
+      width: 100%;
+      height: 18%;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .md-modal{
+    max-width:100%;
+    box-shadow:none;
+  }
+
+  .md-content{
+    position: relative;
+    color:  $color2;
+    display: flex;
+    align-items: center;;
+    justify-content: center;
+    ul{
+      padding: 0;
+      li{
+        font-size: 1.125em;
+        font-weight: bold;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .md-close{
+    top:0;
+    right: auto !important;
+  }
+
+  .sparklingDiv{
+    width: 100%;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  .win{
+    font-weight: bold;
+    color: $color1;
+    .main{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 60px;
+      span{
+        font-size: 25px;
+        &:nth-child(1) , &:nth-child(3){
+          color: $bg-dark5;
+        }
+        &:nth-child(4){
+          color: $color9;
+          font-size: 16px;
+          text-shadow: 0px 3px 3px $color2;
+          p{
+            margin-left: 3px;
+            margin-right: 3px;
+            display: inline-block;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: $color9;
+            color: $bg-dark5;
+          }
+        }
+      }
+    }
+    .number{
+      text-align: center;
+      color: $color1 !important;
+      font-size: 140px !important;
+      line-height: 130px !important;
+    }
+  }
+
+  .non-target{
+    .main{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 60px;
+      span{
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 20px;
+        &:nth-child(1){
+          padding-bottom: 10px;
+        }
+        p{
+          display: inline-block;
+        }
+        &:nth-of-type(2) , &:nth-of-type(4){
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .target-text-main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:nth-of-type(1){
+        color: $color9;
+      }
+      span{
+        &:nth-child(1){
+          writing-mode: vertical-rl;
+          font-size: 18px;
+          padding-bottom: 0;
+        }
+      }
+      .num{
+        font-size: 50px;
+        padding:0 30px;
+        margin:0 15px;
+        border:1px solid #000;
+        border-radius:10px;
+        color: $color9;
+        background: $color1;
+      }
+    }
+  }
+}
+
+
+.target-title{
+  font-size:32px !important;
+  color: $color2;
+  font-weight: bold;
+}
+
+/* 牌 */
+.poker-play{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  .poker_box_item{
+    position: relative;
+  }
+}
+
+.play-win , .bank-win{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  &::after{
+    content: ""; 
+    width: 1408px;
+    height: 1144px;
+    margin:auto;
+    display: block;
+    animation: spin 5s infinite;
+    z-index: 10;
+    position: absolute; 
+    display: none;
+  }
+  img{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    display: none;
+    z-index: 2;
+    &.active{
+      display: block;
+      &::before{
+        display: block;
+      }
+    }
+  }
+}
+
+.prompt{
+  color: $color1;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba( $color2, .6);
+  animation:5s veil 1;
+  span{
+    &:nth-of-type(1){
+      display: block;
+      border: 3px solid $bg-dark5;
+      border-radius: 100px;
+      font-size: 25px;
+      line-height: 25px;
+      padding: 10px;
+      background: $color2;
+      box-shadow: 0px 5px 10px $color2;
+      filter: drop-shadow(5px 5px 5px $color2);
+    }
+    &:nth-of-type(2){
+      font-size: 100px;
+      text-shadow: 0px 5px 10px $color2;
+      filter: drop-shadow(5px 5px 5px $color2);
+    }
+  }
+}
+
+@keyframes veil {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.sparklingDiv{
+  width: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+.play-win{
+  &.active{
+    &::after{
+      display: block;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.poker-bank {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  .poker_box_item{
+    position: relative;
+  }
+}
+
+.bank-win{
+  &.active{
+    &::after{
+      display: block;
+    }
+  }
+}
+
+.poker_box_item{
+  display: flex;
+}
+
+.poker-card {
+  z-index: 1;
+  display:flex;
+  position: relative;
+  margin: 5px;
+  .front{
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  .back{
+    position: absolute;
+    backface-visibility: hidden;
+  }
+}
+
+.front{
+  &.active{
+    transform: rotateY(360deg);
+    transition: 1.5s;
+    opacity: 1;
+  }
+}
+.back{
+  &.active{
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+
+.s-btn , .z-btn{
+  padding-top: 10px;
+  position: relative;
+  img{
+    animation: 2s halo infinite alternate;
+    &:nth-of-type(1){
+      animation: 2s lustre infinite alternate;
+      display: block;
+      position: absolute;
+      z-index: 2;
+    }
+    &:nth-of-type(2){
+      display: block;
+      position: absolute;
+      z-index: 1;
+    }
+    &:nth-of-type() , &:nth-of-type(3){
+      display: none;
+    }
+  }
+  &:hover{
+    @include img-change();
+    filter: drop-shadow(1px 2px 12px rgba( $bg-dark5 , 0.7))
+  }
+}
+
+.s-btn , .z-btn{
+  &.active{
+    img{
+      &:nth-of-type(1) , &:nth-of-type(2){
+        display: none;
+      }
+      &:nth-of-type(3){
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes lustre {
+  0% {
+opacity: 1;
+  }
+  100% {
+opacity: 0;
+  }
+}
+
+@keyframes halo {
+  0% {
+    filter: drop-shadow( 0px 0px 30px rgba( $bg-dark5 , 0));
+  }
+  100% {
+    filter: drop-shadow( 0px 0px 30px rgba( $bg-dark5 , 1));
+  }
+}
+
+.person{
+  .login_content{
+    min-height: auto;
+    text-align: center;
+    .procession_1{
+      padding-top: 10px;
+      letter-spacing: 1px;
+      color: $color1;
+      text-shadow: 0px 1px 3px $color2;
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+    }
+  }
+}
+
+//翻牌效果
+.flickering{
+  filter: drop-shadow();
+  box-shadow: 0px 0px 10px 3px rgba( $bg-dark5 , 0.9);
+}
+
+#canvas{
+  width: 1920px;
+  height: 1080px;
+  position: absolute ; 
+  z-index: -5;
+}
+
+.orb{
+  position: relative;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  filter: blur(1px);
+  z-index: 1;
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+
+.flake {
+  position: absolute;
+  background: $color1;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #f2ffd2,0 20px 50px #fffaad;
+}
+
+.conic {
+  z-index: 1;
+  overflow: hidden;
+  margin: 5px;
+}
+.conic::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: conic-gradient(transparent, #ffffffa3, transparent 30%);
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  100% {
+      transform: rotate(1turn)
+  }
+}
+
+
+//彈窗動態
+.shake {
+  animation: shake 0.1s cubic-bezier(0, 0, 0, 0.99);
+  animation-iteration-count: 20;
+}
+
+@keyframes shake {
+  0% { transform: translate(5px, 5px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(5px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(5px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+//--------------------------------------------- game end
+
+
+footer {
+  text-align: center;
+  font-size: 1.25em;
+  padding: 30px 0;
+  background: $bg-dark2;
+}
+
+
+//桌機時  強制選單出現  手機選單消失
+@media screen and (min-width: 1201px) {
+  .menu {
+    display: block !important;
+  }
+  .menu_mob {
+    display: none !important;
+  }
+
+}
+
+
+//手機橫向時  出現提示畫面
+@media screen and (max-height: 480px) and (orientation:landscape){ 
+	.direction_prompt{
+		width:100%; 
+		height:100%; 
+		display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: fixed;
+    z-index: 9999;
+    background: $color13;
+    div{
+      width: 90%;
+      height: auto;
+      text-align: center;
+      a{
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: auto;
+        background: url(../images/error-icons.png);
+      }
+      span{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 45px;
+        color: $bg-dark4;
+      }
+    }
+	}
+}
+
+
+//------------------------- 響應式內容 >>> 開始 -------------------- 【 RWD 】
+
+
+@media screen and (max-width: 1600px) {
+
+  header {
+    .container{
+      .menu {
+        ul {
+          li {
+            padding-left: 0px;
+            padding-right: 0px;
+            a{
+              padding: 0 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container{
+    padding: 0;
+  }
+
+  //彈窗
+  .md .md-modal {
+    .md-content {
+      padding: 0 3vw;
+    }
+  }
+
+  .md-close{
+    margin-top: 75px;
+    top: -100px !important;
+    right: -40px !important;
+  }
+
+  .time-area{
+    left: 6%;
+  }
+
+  //---------------------------- index
+
+  .bonus{
+    .container{
+      width: 100% ;
+    }
+  }
+
+  .expanse{
+    max-width: initial;
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+
+  .integral{
+    .integral_title{
+      .basic , .double , .finally{
+        font-size: 35px;
+        flex-wrap: wrap;
+        .small_print {
+          font-size: 32px;
+        }
+      }
+    } 
+    .notice{
+      ul{
+        &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+          .tit{
+            font-size: 2vw;
+            letter-spacing: 0;
+          }
+        }
+      }
+      li{
+        font-size: 20px;
+      }
+      br{
+        display: none;
+      }
+    }
+  }
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god . whole
+
+  .member-login{
+    .login-btn{
+      width: 80%;
+    }
+  }
+
+  .list-btnarea{
+    flex-wrap: wrap;
+  }
+
+  .semi-list , .final-list{
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .login-text{
+    letter-spacing: 0;
+  }
+
+  .list-icon{
+    margin: 0;
+  }
+
+  .login_content{
+    div{
+      .ranking_trophy , .ranking_bonus{
+        left: 0;
+      }
+      ul{
+        width: 100%;
+      }
+    }
+    .procession_2{
+      ul{
+        li{
+          &:nth-of-type(1){
+            padding-left: 6vw;
+          }
+        }
+      }
+    }
+    .procession_3{
+      flex-wrap: wrap;
+      ul{
+        &:nth-of-type(1){
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .description_title{
+    right: 2.5%;
+  }
+
+  .ranking-text {
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .select-month{
+    .my_game{
+      padding-bottom: 10px;
+    }
+  }
+
+  .select-bg{
+    margin: 25px 0 0 0;
+    position: inherit;
+    right: 0;
+    top: 0;
+  }
+
+  .float{
+    .md-close{
+      top:0 !important;
+      right: 0 !important;
+      margin-top: -30px;
+    }
+  }
+
+  .month-rank{
+    ul{
+      li{
+        .arrow{
+          left: 0%;
+          &.active{
+            left: 0%;
+          }
+        }
+      }
+    }
+  }
+
+
+  //---------------------------- god . whole end
+
+
+  //---------------------------- game
+
+  .s-btn, .z-btn {
+    position: absolute;
+    bottom: 35px;
+    z-index: 2;
+  }
+
+  //---------------------------- gane end
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .side_menu{
+    .pc , .extra{
+      display: none;
+    }
+    .mobile{
+      width: 100%; 
+      height: 48px;
+      box-shadow:0px 5px 15px -1px #000 ; 
+      position:fixed; 
+      background-color: #fffbf3; 
+      bottom: 0; 
+      left: 0;
+      display: flex;
+      justify-content: center;
+      a{
+        width: auto;
+        line-height: 48px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 10px;
+        padding-left: 40px;
+        padding-right: 10px;
+        color: $color2;
+        font-size: 16px;
+        &:nth-child(n){
+          background-repeat: no-repeat;
+          background-position: left center;
+        }
+        &:nth-child(1){
+          background-image: url(../images/side_menu/m_menu_icon_01.png);
+        }
+        &:nth-child(2){
+          background-image: url(../images/side_menu/m_menu_icon_02.png);
+        }
+        &:nth-child(3){
+          background-image: url(../images/side_menu/m_menu_icon_03.png);
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+  .menu_button {
+    display: block;
+  }
+  body {
+    font-size: 80%;
+  }
+  header{
+    width: 100%;
+    position:fixed;
+    z-index: 10;
+    &.active{
+      .menu_button {
+        .menuicon {
+          background: transparent;
+          &:before {
+            top: 0;
+            transform: rotate(-45deg);
+          }
+          &:after {
+            top: 0;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      .md-overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  //---------------------------- index
+
+  .m_30{
+    padding-bottom: 50px;
+  }
+
+  .card{
+    .card_main {
+      li{
+        &:nth-of-type(1) , 
+        &:nth-of-type(3) , 
+        &:nth-of-type(5)
+        {
+          font-size: 2.3em;
+        }
+        &:nth-of-type(2) , 
+        &:nth-of-type(4) , 
+        &:nth-of-type(6){
+          font-size: 2.7em;
+          span{
+            font-size: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .schedule-text{
+    br{
+      display: block;
+    }
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+
+  //積分
+  .rule_tit{
+    ul{
+      padding: 2%;
+    }
+    li{
+      width: 18%;
+      font-size: 15px;
+      a{
+        padding: 5px 5px;
+      }
+    }
+  }
+
+  .integral{
+    overflow: hidden;
+    .integral_title{
+      display: inline-block;
+      width: 100%;
+      .basic , .double , .finally{
+        font-size: 2.8vw;
+        flex-wrap: wrap;
+        .small_print {
+          font-size: 2.8vw;
+        }
+      }
+    } 
+    .notice{
+      ul{
+        &:nth-of-type(1) , &:nth-of-type(2) , &:nth-of-type(3){
+          .tit{
+            font-size: 25px;
+            letter-spacing: 5px;
+          }
+        }
+        li{
+          font-size: 18px;
+          text-align: left;
+          &:nth-of-type(1) , &:nth-of-type(2){
+            width: 100%;
+          }
+        }
+
+      }
+    }
+    .focus{
+      .nb_value , .single , .sign_in , .mature{
+        position: absolute;
+      }
+      .single{
+        img{
+          &:nth-child(1){
+            width: 8vw;
+          }
+          &:nth-child(4){
+            width: 30vw;
+          }
+        }
+      }
+      .sign_in{
+        img{
+          &:nth-child(1){
+            width: 8vw;
+          }
+          &:nth-child(3){
+            width: 35vw;
+          }
+        }
+      }
+      .mature{
+        right: 25px;
+        bottom: 0;
+        img{
+          &:nth-child(1) , &:nth-child(2){
+            width: 8vw;
+          }
+          &:nth-child(3){
+            width: 30vw;
+          }
+        }
+        span{
+          &:nth-child(2){
+            top: 30px;
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .charts-css.column.data-spacing-5{
+    tbody{
+      tr{
+        padding-inline-start: 50px !important;
+        padding-inline-end: 50px !important;
+      }
+    }
+  }
+
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god
+
+  .time-area{
+    left: 3%;
+  }
+
+  .timer {
+    span{
+      width: 4.5vw;
+    }
+  }
+
+  .rank-title{
+    font-size: 40px;
+  }
+
+  .description_title{
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 90px;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .bomb_information{
+    .in_content{
+      div{
+        ul{
+          .space_left{
+            padding-left: 70px;
+          }
+          .short{
+            font-size: 18px;
+          }
+        }
+        .ranking_trophy, .ranking_bonus{
+          left: -30px;
+        }
+      }
+      .tick , .take{
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .month-rank{
+    ul{
+      li{
+        .arrow{
+          left: 30%;
+          &.active{
+            left: 30%;
+          }
+        }
+      }
+    }
+  }
+
+
+  //---------------------------- god end
+
+
+  //---------------------------- game
+
+  .main_label{
+    padding-top: 50px;
+  }
+
+  .s-btn , .z-btn{
+    position: relative;
+    z-index:auto;
+    bottom: 0;
+  }
+
+  //---------------------------- game end
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .outside {
+    min-height: 450px !important;
+  }
+
+  //---------------------------- god
+
+  .bomb_information{
+    .in_content{
+      div{
+        width: 100%;
+        ul{
+          .space_left{
+            padding-left: 0;
+            text-align: center;
+          }
+        }
+        .ranking_trophy, .ranking_bonus{
+          left: -20px;
+        }
+      }
+      .tick , .take{
+        padding-left: 0;
+        display: inline-flex;
+      }
+    }
+  }
+
+  .month-rank{
+    ul{
+      li{
+        .arrow{
+          left: 40%;
+          &.active{
+            left: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  //---------------------------- god end
+
+
+  //---------------------------- game
+
+  .main_label{
+    padding-top: 50px;
+  }
+
+  .record{
+    .md-modal{
+      top:55%;
+      .main{
+        .login_content{
+          .sheet{
+            div{
+              span{
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .step{
+    .multiple-rule-title{
+      font-size: 50px;
+    }
+  }
+
+  //---------------------------- game end
+
+}
+
+
+
+//------------------------- 響應式內容 >>> 開始 -------------------- 【 RWD 】 --  橫向
+
+
+@media screen and (max-height: 800px){
+
+  //---------------------------- game
+
+  .record{
+    .md-modal{
+      .main{
+        .login_content{
+          .sheet{
+            .content{
+              height: 400px;
+            }
+            .sense{
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //---------------------------- game end
+
+}
+
+@media screen and (max-height: 600px){
+
+  //---------------------------- game
+
+  .record{
+    .md-modal{
+      .main{
+        .login_content{
+          .sheet{
+            .content{
+              height: 310px;
+            }
+            .sense{
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //---------------------------- game end
+
+}
+
+
+@media screen and (max-width:992px){
+
+  //---------------------------- index
+
+  //賽程
+  .card{
+    .card_main {
+      li{
+        font-size: 2.7em;
+        &:nth-of-type(2) , 
+        &:nth-of-type(4) , 
+        &:nth-of-type(6){
+          span{
+            font-size: 0.4em;
+          }
+        }
+      }
+    }
+  }
+
+  .schedule-semi01 , .schedule-semi02 {
+    margin-bottom: 260px;
+  }
+
+  .schedule-final{
+    margin-bottom: 290px;
+  }
+
+  //賽程詳情
+  .competition{
+    .bonus_table{
+      width: 100%;
+      margin: 100px auto 0 auto;
+      img{
+        top: -100px;
+      }
+      .main{
+        width: 100%; 
+        padding-top: 40px;
+        div{
+          width: 90%; 
+        }
+        ul{
+          display: flex;
+          li{
+            display: inline-block;
+            line-height: 35px;
+            width: 40%;
+            &:first-child{
+              width: 55%;
+            }
+          }
+        }
+      }
+    }   
+    .list{
+      div{
+        li{
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+  
+  //積分
+  .sign-rule{
+    display: block;
+    padding: 10px;
+  }
+  .sign-main{
+    width: 25%;
+  }
+  .rank-main{
+    width: 25%;
+  }
+
+  .integral{
+    .integral_title{
+      text-align: center;
+      img{
+        position: inherit;
+        display: block;
+        margin: auto;
+      }
+      .basic , .double , .finally{
+        font-size: 3.5vw;
+        .small_print {
+          font-size: 3vw;
+        }
+      }
+    } 
+    .notice{
+      li{
+        font-size: 16px;
+      }
+      br{
+        display: block;
+      }
+    }
+    .signify{
+      div{
+        padding: 20px 0;
+        &:nth-child(1){
+          order: 2;
+          justify-content: center;
+        }
+        &:nth-child(2){
+          order: 1;
+          justify-content: center;
+        }
+        &:nth-child(3){
+          order: 3;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .multiple-rule-title{
+    font-size:45px;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+  }
+
+  .rule-subtitle{
+    font-size: 24px;
+  }
+
+  .member-icon{
+    width: auto;
+    div{
+      width: 110px;
+      text-align: center;
+    }
+  }
+
+  .charts-css.column.data-spacing-5{
+    tbody{
+      tr{
+        padding-inline-start: 25px !important;
+        padding-inline-end: 25px !important;
+      }
+    }
+  }
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god . whole
+
+  //賭神榜
+  .time-area{
+    position: relative;
+    left: auto;
+  }
+
+  .timer{
+    span{
+      width: 50px;
+    }
+  }
+
+  .rank-title{
+    font-size: 50px;
+  }
+
+  .rank-text{
+    font-size: 20px;
+  }
+
+  .ranking-text{
+    text-align: center;
+    margin: 5px auto;
+    line-height: 20px;
+    br{
+      display: block;
+    }
+  }
+
+  .select-bg{
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .description_title{
+    position: relative;
+    margin: -20px auto 0 auto;
+  }
+
+  .login_content{
+    .procession_2 {
+      ul{
+        li{
+          &:nth-of-type(1){
+            padding-left: 8vw;
+          }
+        }
+      }
+    }
+    .procession_3 {
+      ul{
+        &:nth-of-type(1){
+          width: 20%;
+        }
+      }
+    }
+    div{
+      .ranking_trophy , .ranking_bonus{
+        left: -20px;
+      }
+      ul{
+        width: 45%;
+      }
+    }
+  }
+
+  .select-bg{
+    margin: 20px 0 0 0;
+  }
+
+  //---------------------------- god . whole end
+
+
+  //---------------------------- game
+
+  .step{
+    text-align: center;
+    img{
+      padding-top: 10px;
+    }
+    .procedure{
+      justify-content: center;
+    }
+  }
+
+  .main_label{
+    padding-top: 50px;
+    .time-area {
+      padding-top: 10px;
+    }
+  }
+
+  .illustrate {
+    padding-top: 10px;
+    a{
+      display: inline-block;
+      margin: 0 3vw;
+    }
+  }
+
+  .marquee{
+    margin-top: 0;
+  }
+
+
+  .poker{
+    .container{
+      padding-bottom: 30vh;
+    }
+  }
+
+  //---------------------------- game end
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .container{
+    max-width: 100%;
+  }
+
+  //---------------------------- index
+
+  //賽程圖
+  .demo{
+    video{
+      display: none;
+    }
+    .pic{
+      display: block;
+    }
+  }
+
+  .month {
+    li{
+      &:nth-child(1), &:nth-child(5) {
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+  .semi , .semi2{
+    li{
+      &::before{
+        display: none;
+      }
+      &::after{
+        display: none;
+      }
+    }
+    ul{
+      &::before{
+        display: none;
+      }
+    }
+  }
+  .final{
+    li{
+      &::before{
+        display: none;
+      }
+    }
+    ul{
+      &::before{
+        display: none;
+      }
+    }
+  }
+
+  .schedule-month ,
+  .schedule-semi01,
+  .schedule-semi02 ,
+  .schedule-final{
+    position: relative;
+    top:0;
+    margin-bottom: 0;
+  }
+
+  .card{
+    .card_main {
+      li{
+        &:nth-of-type(2) , 
+        &:nth-of-type(4) , 
+        &:nth-of-type(6){
+          font-size: 3.5em;
+          span{
+            font-size: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .card_line{
+    border: none;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    span{
+      &:nth-of-type(1) , &:nth-of-type(2) , 
+      &:nth-of-type(3) , &:nth-of-type(4) {
+        display: none;
+      }
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .m_50{
+    margin-bottom: 20px;
+  }
+
+  .detail{
+    right: 20px;
+    top: 8%;
+  }
+
+  .schedule-text{
+    br{
+      display: none;
+    }
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+
+  //積分
+  .rule_tit{
+    display: none;
+  }
+
+  .integral{
+    padding-top: 30px;
+    .integral_title{
+      .basic , .double , .finally{
+        font-size: 25px;
+        flex-wrap: wrap;
+        .small_print {
+          font-size: 20px;
+        }
+      }
+    } 
+    .notice{
+      ul{
+        p{
+          display: none;
+        }
+      }
+      br{
+        display: none;
+      }
+    }
+
+    .focus{
+      height: auto;
+      flex-direction: column;
+      .nb_value , .single , .sign_in , .mature{
+        position: inherit;
+      }
+      .nb_value{
+        img{
+          &:nth-child(1){
+            width: 52vw;
+          }
+        }
+      }
+      .single{
+        img{
+          &:nth-child(1){
+            width: 12vw;
+          }
+          &:nth-child(4){
+            width: 52vw;
+          }
+        }
+        span{
+          &:nth-child(3){
+            top: -30px;
+          }
+        }
+      }
+      .sign_in{
+        top:0;
+        padding-top: 20px;
+        img{
+          &:nth-child(1){
+            width: 12vw;
+          }
+          &:nth-child(3){
+            width: 52vw;
+          }
+        }
+      }
+      .mature{
+        right: 0;
+        bottom: 0;
+        padding-top: 20px;
+        img{
+          &:nth-child(1) , &:nth-child(2){
+            width: 12vw;
+          }
+          &:nth-child(3){
+            width: 52vw;
+          }
+        }
+        span{
+          &:nth-child(2){
+            top: 30px;
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+
+  .chief , .small_print{
+    width: 100%;
+  }
+
+  .chief{
+    margin: 10px 0;
+  }
+
+
+  .multiple-rule-title{
+    font-size: 35px;
+  }
+
+  .rule-subtitle{
+    font-size: 20px;
+  }
+
+  .multiple-rule-space {
+    padding-top: 10px;
+  }
+
+  .charts-css.bar.datasets-spacing-5{
+    tbody{
+      tr{
+        td{
+          margin-block-start: 6px !important;
+          margin-block-end: 6px !important;
+        }
+      }
+    }
+  }
+
+  #grow-rule2{
+    height: 400px;
+    tbody{
+      th{
+        color: $color1;
+        background-size: contain;
+      }
+    }
+  }
+
+  .grow-rule-pc{
+    display: none;
+  }
+
+  .charts-css{
+    width: 90% !important;
+  }
+
+  .grow-rule-moblie{
+    display: block;
+  }
+
+  .charts-css.bar{
+    tbody{
+      --secondary-axes-width: 2px;
+      --secondary-axes-color: rgba(147,147,147);
+    }
+  }
+
+  .charts-css.bar.show-10-secondary-axes:not(.reverse){
+    tbody{
+      tr{
+        background-size: 20% 100% !important;
+      }
+    }
+  }
+
+  .data{
+    br{
+      display: none;
+    }
+  }
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god . whole
+
+  .month-rank{
+    .ranking_table_title{
+      .coin{
+        display: none;
+      }
+    }
+  }
+
+  .float{
+    right: 10px;
+    .md-close{
+      width: 25px;
+      height: 25px;
+      font-size: 22px;
+      line-height: 25px; 
+    }
+    img{
+      width: 80px;
+    }
+  }
+
+  .bomb_login{
+    .login-btn{
+      width: 200px;
+    }
+  }
+
+
+  //---------------------------- god. whole end
+
+
+  //---------------------------- game
+
+
+/* 小遊戲 */
+
+  .poker{
+    .game_mask{
+      span{
+        font-size: 25px;
+      }
+    }
+    .container{
+      padding-bottom: 12vh;
+    }
+  }
+
+  .record{
+    .md-modal{
+      width: auto;
+      .main{
+        width: 400px;
+        .login_content{
+          .sheet{
+            .sense{
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .poker-result{
+
+    .win{
+      .main{
+        padding-top: 40px;
+        span{
+          font-size: 3.5vw;
+          &:first-child{
+            letter-spacing: 5px;
+          }
+          &:nth-child(4){
+            font-size: 2.5vw;
+            padding-top: 0;
+          }
+        }
+      }
+      .number{
+        font-size: 20vw !important;
+        line-height: 18vw !important;
+      }
+    }
+
+    .non-target{
+      width: 400px;
+      .main{
+        padding-top: 60px;
+        span{
+          font-size: 18px;
+          &:nth-of-type(2) , &:nth-of-type(4){
+            margin-bottom: 8px;
+            margin-top: 8px;
+          }
+        }
+      }
+      .target-text-main{
+        span{
+          &:nth-child(1){
+            font-size: 2.5vw;
+          }
+        }
+        .num{
+          font-size: 35px;
+          padding:0 20px;
+          margin:0 10px;
+        }
+      }
+    }
+
+  }
+
+  .target-title{
+    font-size:28px !important;
+  }
+
+  .conic {
+    overflow: inherit;
+    &::before{
+      display: none;
+    }
+  }
+  
+  .flake {
+    width: 5px;
+    height: 5px;
+  }
+
+
+  .prompt{
+    background: none;
+    span{
+      &:nth-of-type(1){
+        font-size: 18px;
+        line-height: 18px;
+      }
+      &:nth-of-type(2){
+        font-size: 85px;
+      }
+    }
+  }
+
+
+  //---------------------------- game end
+
+}
+
+
+@media (max-width: 500px) {
+
+  //彈窗
+  .md .md-modal {
+    width: calc(100vw - 30px);
+    .md-content {
+      padding: 0 3vw;
+    }
+  }
+
+  .rule , .finals , .early {
+    .md-content {
+      height: calc(100vh - 220px);
+    }
+    .outside{
+      padding-top: 30px;
+    }
+  }
+
+  .md-close {
+    top: -120px !important;
+    right: -5px !important;
+  }
+
+  .bomb_title{
+    min-height: 100px;
+  }
+
+  //---------------------------- index
+
+  //賽程
+  .card{
+    .card_main {
+      background: none;
+      li{
+        &:nth-of-type(1) , 
+        &:nth-of-type(3) , 
+        &:nth-of-type(5)
+        {
+          font-size: 2.3em;
+        }
+        &:nth-of-type(2) , 
+        &:nth-of-type(4) , 
+        &:nth-of-type(6){
+          font-size: 2.7em;
+          span{
+            font-size: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .rule-subtitle{
+    font-size: 1.7em;
+  }
+
+  //賽程詳情
+  .competition{
+    .bonus_table{
+      margin: 60px auto 0 auto;
+      .main{
+        ul{
+          li{
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+      } 
+      img {
+        top: -50px;
+        width: 220px;
+      }
+    }
+    .list{
+      div{
+        li{
+          line-height: 25px;
+          br{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .schedule-text{
+    br{
+      display: block;
+    }
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+
+  .integral{
+    .integral_title{
+      .basic , .double , .finally{
+        font-size: 4.5vw;
+        flex-wrap: wrap;
+        .small_print {
+          font-size: 18px;
+          br{
+            display: block;
+          }
+        }
+      }
+    } 
+    .notice{
+      ul{
+        .tit{
+          font-size: 25px;
+          text-align: center;
+        }
+        li{
+          font-size: 16px;
+          text-align: center;
+          padding: 15px 3px;
+          &:nth-of-type(1){
+            padding-left: 0;
+          }
+        }
+      }
+      br{
+        display: block;
+      }
+    }
+    .signify{
+      div{
+        &:nth-child(2){
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+    .focus{
+      .nb_value{
+        img{
+          &:nth-child(1){
+            width: 65vw;
+          }
+        }
+      }
+      .single{
+        img{
+          &:nth-child(1){
+            width: 15vw;
+          }
+          &:nth-child(4){
+            width: 65vw;
+          }
+        }
+        span{
+          &:nth-child(2){
+            top: -10px;
+            left: 30px;
+          }
+          &:nth-child(3){
+            top: -30px;
+          }
+        }
+      }
+      .sign_in{
+        img{
+          &:nth-child(1){
+            width: 15vw;
+          }
+          &:nth-child(3){
+            width: 65vw;
+          }
+        }
+        span{
+          &:nth-child(2){
+            bottom: 40px;
+          }
+        }
+      }
+      .mature{
+        img{
+          &:nth-child(1) , &:nth-child(2){
+            width: 15vw;
+          }
+          &:nth-child(3){
+            width: 65vw;
+          }
+        }
+      }
+    }
+    .headline{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .digit{
+    width: 5.5vw;
+    line-height: 5.5vw;
+    font-size: 5vw;
+  }
+
+  .multiple-rule-title{
+    font-size: 35px;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+  }
+
+  .multiple-rule-text{
+    text-align: left;
+    padding: 10px;
+    span{
+      line-height: normal;
+    }
+  }
+
+  .multiple-rule-text-bottom{
+    padding: 10px 0;
+    line-height: 20px;
+  }
+
+  .rule-subtitle{
+    font-size: 20px;
+  }
+
+  .sign-rule {
+    img{
+      width: 35%;
+      margin: 10px 18px;
+    }
+  }
+
+  .member{
+    display: block;
+    text-align: center;
+    .member-icon{
+      width: 100%;
+      padding: 10px 0;
+    }
+    .rule-s-text{
+      text-align: left;
+    }
+  }
+
+  #grow-rule2 {
+    .grow-rule-box{
+      margin-left: 40px;
+    }
+  }
+
+  .charts-css.bar.show-labels{
+    --labels-size: 40px !important;
+  }
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god .whole
+
+  .month-rank{
+    .ranking_table_title{
+      li{
+        line-height: 20px;
+        span{
+          padding: 5px 0;
+        }
+      }
+      p{
+        display: block;
+      }
+      .coin{
+        display: none;
+      }
+    }
+  }
+
+  .rank-title{
+    font-size: 9.5vw;
+  }
+
+  .rank-text {
+    padding: 20px 0 0 0;
+    font-size: 5vw;
+  }
+
+  .pagination{
+    ul{
+      li{
+        a{
+          padding: 8px 2.5vw;
+        }
+      }
+    }
+  }
+
+  .login_content{
+    div{
+      .ranking_trophy , .ranking_bonus{
+        left: 0;
+      }
+      ul{
+        width: 100%;
+      }
+    }
+    .procession_1{
+      padding-top: 10vw;
+    }
+    .procession_2{
+      ul{
+        li{
+          &:nth-of-type(1){
+            padding-left: 60px;
+          }
+        }
+      }
+    }
+    .procession_3{
+      ul{
+        &:nth-of-type(1){
+          width: 100%;
+        }
+      }
+    }
+    .procession_5{
+      flex-wrap: wrap;
+      justify-content: center;
+      ul{
+        width: 100%;
+      }
+      .symbol{
+        padding-top: 10px;
+      }
+    }
+    .right{
+      right: 5vw;
+    }
+    .symbol{
+      font-size: 18px;
+    }
+  }
+
+  .bomb_title{
+    .time-area{
+      width: auto;
+    }
+  }
+
+  .bomb_information{
+    .bomb_mask{
+      span{
+        br{
+          display: none;
+        }
+      }
+    }
+    .in_content{
+      div{
+        &:nth-of-type(1){
+          display: block;
+          line-height: 25px;
+          padding-bottom: 10px;
+        }
+        width: 100%;
+        .ranking_trophy, .ranking_bonus{
+          left: 0;
+          position: inherit;
+          margin: auto;
+        }
+        ul{
+          left: 0;
+          .space_left{
+            padding-left: 0;
+            text-align: center;
+            br{
+              display: block;
+            }
+          }
+        }
+        .short{
+          width: 80% !important;
+        }
+      }
+    }
+  }
+
+  .bomb-rank{
+    ul{
+      br{
+        display: block;
+      }   
+    }
+    .ranking_table_title{
+      li{
+        padding: 10px 0;
+        br{
+          display: block;
+        }
+      }
+    }
+  } 
+
+
+  //---------------------------- god . whole end
+
+
+  //---------------------------- game
+
+  .illustrate{
+    display: flex;
+    justify-content: center;
+    a{
+      margin: 5px 3vw;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+      align-items: center;
+    }
+  }
+
+  .activity , .prize{
+    width: 110px;
+    line-height: 35px;
+    border-radius: 20px;
+    &::after{
+      position: inherit;
+      left: 0;
+    }
+  }
+
+  .step{
+    span{
+      letter-spacing: 0;
+    }
+    .multiple-rule-title{
+      font-size: 10vw;
+    }
+  }
+
+  #in_message{
+    .date{
+      padding-left: 20px;
+    }
+    a{
+      margin: 0;
+    }
+  }
+
+  .poker{
+    .container{
+      padding-bottom: 9vh;
+      .poker-play , .poker-bank{
+        .poker-card{
+          width: 120px;
+          &:nth-of-type(1){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-65%, -55%);
+          }
+          &:nth-of-type(2){
+            top: 50%;
+            left: 45%;
+            transform: translate(-40%, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .s-btn, .z-btn {
+    padding-top: 30px;
+  }
+
+  .record{
+    .md-modal{
+      width: calc(100vw - 30px);
+      .main{
+        width: 100%;
+        .prize_tit{
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .poker-result {
+    .login , .non-target , .win , .lose , .already , .already , .unstable {
+      width: 100%;
+      .button{
+        width: 35%;
+        font-size: 16px;
+        line-height: 40px;
+      }
+    }
+
+    .win{
+      .number{
+        font-size: 20vw !important;
+        line-height: 18vw !important;
+      }
+    }
+
+    .non-target{
+      .main{
+        padding-top: 10vw;
+        span{
+          font-size: 4vw;
+          &:nth-of-type(2) , &:nth-of-type(4){
+            margin-bottom: 1vw;
+            margin-top: 1vw;
+          }
+        }
+      }
+      .target-text-main{
+        span{
+          &:nth-child(1){
+            font-size: 14px;
+          }
+        }
+        .num{
+          font-size: 35px;
+          padding:0 20px;
+          margin:0 10px;
+        }
+      }
+    }
+
+  }
+
+  .target-title{
+    font-size:6vw !important;
+  }
+
+
+  //---------------------------- game end
+
+}
+
+
+
+@media screen and (max-width: 380px){
+
+  //---------------------------- game
+
+  .record{
+    .md-modal{
+      .main{
+        .login_content{
+          .sheet{
+            .content{
+              height: 270px;
+            }
+            .sense{
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  //---------------------------- game end
+
+}
+
+
+
+@media screen and (max-width: 360px){
+
+  .side_menu{
+
+    .mobile{
+      a{
+        padding-left: 30px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  //---------------------------- index
+
+  //賽程
+  .card{
+    .card_main {
+      li{
+        &:nth-of-type(1) , 
+        &:nth-of-type(3) , 
+        &:nth-of-type(5)
+        {
+          font-size: 2em;
+        }
+        &:nth-of-type(2) , 
+        &:nth-of-type(4) , 
+        &:nth-of-type(6){
+          font-size: 2.5em;
+          span{
+            font-size: 0.5em;
+          }
+        }
+      }
+      .tit{
+        width: auto;
+      }
+    }
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+
+  .integral{
+    .integral_title{
+      .basic , .double , .finally{
+        font-size: 18px;
+        span{
+          margin: 0 1px;
+        }
+        .small_print {
+          font-size: 16px;
+          br{
+            display: block;
+          }
+        }
+      }
+    } 
+    .notice{
+      ul{
+        &:nth-of-type(1) , &:nth-of-type(2){
+          li{
+            &:nth-of-type(2){
+              br{
+                display: block;
+              }
+            }
+          }
+        }
+        .tit{
+          font-size: 22px !important;
+        }
+      }
+      li{
+        font-size: 16px !important;
+        padding: 15px 5px;
+      }
+    }
+    .focus{
+      .nb_value{
+        img{
+          &:nth-child(1){
+            width: 220px;
+          }
+        }
+      }
+      .single{
+        img{
+          &:nth-child(1){
+            width: 50px;
+          }
+          &:nth-child(4){
+            width: 220px;
+          }
+        }
+        span{
+          &:nth-child(3){
+            top: -30px;
+          }
+        }
+      }
+      .sign_in{
+        img{
+          &:nth-child(1){
+            width: 50px;
+          }
+          &:nth-child(3){
+            width: 220px;
+          }
+        }
+        span{
+          &:nth-child(2){
+            bottom: 40px;
+          }
+        }
+      }
+      .mature{
+        img{
+          &:nth-child(1) , &:nth-child(2){
+            width: 50px;
+          }
+          &:nth-child(3){
+            width: 220px;
+          }
+        }
+        span{
+          &:nth-child(2){
+            top: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .chief{
+    margin: 5px 0;
+  }
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god
+
+  .month-rank{
+    .ranking_table_title{
+      li{
+        line-height: 18px;
+      }
+      p{
+        br{
+          display: block;
+        }
+      }
+    }
+  }
+
+  /* 場次 */
+  .select-bg{
+    span{
+      &:nth-child(1){
+        margin-right:10px !important;
+      }
+    }
+  }
+
+  .login_content{
+    .procession_1{
+      padding-top: 15px;
+    }
+  }
+
+  //---------------------------- god end
+
+
+  //---------------------------- game
+
+  #in_message{
+    .date{
+      padding-left: 1px;
+    }
+  }
+
+  .record{
+    .md-modal{
+      .main{
+        .prize_tit{
+          font-size: 25px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .record{
+    .md-modal{
+      .main{
+        .login_content{
+          .procession_1{
+            line-height: 25px;
+            br{
+              display: block;
+            }
+          } 
+        }
+      }
+    }
+  }
+  
+
+  .poker-result {
+    .non-target{
+      .main{
+        padding-top: 40px;
+        span{
+          font-size: 15px;
+          &:nth-of-type(2) , &:nth-of-type(4){
+            margin-bottom: 3px;
+            margin-top: 3px;
+          }
+        }
+      }
+      .target-text-main{
+        span{
+          &:nth-child(1){
+            font-size: 12px;
+          }
+        }
+        .num{
+          font-size: 30px;
+          padding:0 20px;
+          margin:0 10px;
+        }
+      }
+    }
+
+    .win{
+      .main{
+        span{
+          font-size: 16px;
+          &:nth-child(4){
+            font-size: 12px;
+          }
+        }
+        .number{
+          font-size: 60px !important;
+          line-height: 55px !important;
+        }
+      }
+    }
+  }
+
+  .target-title{
+    font-size: 20px !important;
+  }
+
+
+
+
+
+  //---------------------------- game end
+
+}
+
+@media screen and (max-width: 320px){
+
+  body{
+    width: 320px;
+  }
+
+  //彈窗
+  .md .md-modal {
+    width: 300px;
+  }
+
+  //---------------------------- index
+
+  //賽程詳情
+  .competition{
+    .list{
+      div{
+        li{
+          line-height: 20px;
+          br{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  //---------------------------- index end
+
+
+  //---------------------------- rule
+
+  .r_bg{
+    background-size: 320px;
+  }
+
+  //---------------------------- rule end
+
+
+  //---------------------------- god . whole
+
+  .rank-title{
+    font-size: 30px;
+  }
+
+  .rank-text {
+    font-size: 20px;
+  }
+
+  .bomb_information{
+    .in_content{
+      div{
+        &:nth-of-type(1){
+          line-height: 20px;
+          br{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+
+  //---------------------------- god . whole end
+
+
+  //---------------------------- game
+
+  .step{
+    .multiple-rule-title{
+      font-size: 32px;
+    }
+  }
+
+  //---------------------------- game end
+
+}
+
+
