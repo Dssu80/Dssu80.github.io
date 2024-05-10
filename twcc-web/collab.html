@@ -1,0 +1,375 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- 彈窗-->
+    <link href="js/lity/lity.css" rel="stylesheet" type="text/css">
+    <!-- 輪播-->
+    <link href="js/swiper/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/loading.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 彈窗-->
+    <script src="js/lity/lity.js"></script>
+    <!-- 語系 -->
+    <script src="js/jq-i18n/jquery.i18n.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.parser.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.language.js"></script>
+    <!-- 輪播-->
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/internal.js"></script>
+
+    <link rel="shortcut icon" href="images/ico.ico" />
+    <title>TWCC</title>
+</head>
+
+<body>
+    <!-- gotop -->
+    <div class="gotop">
+        <a href="javascript:;"></a>
+    </div>
+    <!-- nft-彈窗 -->
+
+    <div class="md mint_result">
+        <div class="md-modal">
+            <button class="lity-close md-close" type="button">×</button>
+            <div class="md-content">
+                <div id="preloader">
+                    <div id="status"><img src="images/mint-loading.gif" /></div>
+                </div>
+                <img src="images/nft-result.jpg" alt="" width="500">
+                <p>#001</p>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+    </div>
+
+    <!-- nft-彈窗end -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-icon">
+                    <a href="https://www.youtube.com/@twthesandbox2921" target="_blank">
+                        <img src="images/yt-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://www.instagram.com/TWCCTheSandbox" target="_blank">
+                        <img src="images/ig-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://t.co/h8OzcNzD8l" target="_blank">
+                        <img src="images/discord-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://twitter.com/TWCCTheSandbox" target="_blank">
+                        <img src="images/twitter-icon.png" alt="" width="25">
+                    </a>
+                </div>
+                <div class="select-box">
+                    <span class="lan-icon">
+                        <img src="images/lan-icon.svg" alt="" width="20px">
+
+                    </span>
+
+                    <select id="i18n-selector">
+                        <option value="cn">中文</option>
+                        <option value="en">en</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+        </div>
+        <div style="background:#1491ffbb;border-top:1px solid #fff;border-bottom:1px solid #fff;">
+            <div class="container">
+                <a href="javascript:;" class="menu_button">
+                    <div class="menuicon"></div>
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span><img src="images/tw-cc-logo.png" alt="" width="26"></span>
+                                <span>TW CREATOR CLUB</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="header-scroll">TWCC PASS</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="header-scroll">Roadmap</a>
+                        </li>
+                        <li>
+                            <a href="collab.html" class="header-scroll">collaborate</a>
+                        </li>
+                        <a href="#" class="con-btn ldx ldx-damage" style="animation-duration:6.0s">
+                            <span id="connect-span">
+                                connect
+                            </span>
+                        </a>
+                    </ul>
+
+                </nav>
+                <!-- connect -->
+                <a href="#" class="con-btn-m ldx ldx-damage" style="animation-duration:6.0s">
+                    <span id="connect-span-m">
+                        connect
+                    </span>
+                </a>
+            </div>
+            <nav class="menu_mob">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span><img src="images/tw-cc-logo.png" alt="" width="26"></span>
+                            <span>TW CREATOR CLUB</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="header-scroll">TWCC PASS</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="header-scroll">Roadmap</a>
+                    </li>
+                    <li>
+                        <a href="collab.html" class="header-scroll">collaborate</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="md-overlay"></div>
+        </div>
+    </header>
+    <section>
+        <!-- 最近消息區塊 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="news">
+                        <div class="news-box">
+                            <span class="news-title">
+                                <span style="margin-right: 5px;"><img src="images/news-icon.svg" alt="" width="30"
+                                        height="24"></span>
+                                <span data-i18n="news-title">最新消息</span>
+                            </span>
+                            <span class="marquee">
+                                <marquee data-i18n="news">這裡是最新消息區域</marquee>
+                            </span>
+                            <span class="history-btn">
+                                <a href="#" class="slide-history" data-i18n="history-title">
+                                    歷史消息
+                                </a>
+                                <span class="arrow"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="history">
+                            <div class="record">
+                                <span class="date" data-i18n="date"></span>
+                                <span class="text" data-i18n="history"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collab">
+        <div class="container">
+            <div class="row " style="display:flex;align-items:center;">
+                <div class="col-12 t-align-center m_20 mint-title" style="position: relative;">
+                    <img src="images/collab-title.png" alt="" class="">
+                </div>
+                <div class="col-md-6 m_20">
+                    <div class="row collab-box">
+                        <div class="col-md-4 t-align-center">
+                            <p class="title m_10">
+                                RaInbow Q StudIo
+                            </p>
+                            <img src="images/coll-1.png" alt="" class="m_10">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="collab-text">
+                                <p data-i18n="collab-1" class="root"> </p>
+                                <p>IG: <a href="https://www.instagram.com/rainbowq_studio/"
+                                        target="_blank">https://www.instagram.com/rainbowq_studio/</a></p>
+                                <p>Twitter: <a href="https://twitter.com/QcatRainbow"
+                                        target="_blank">https://twitter.com/QcatRainbow</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m_20">
+                    <div class="row collab-box">
+                        <div class="col-md-4 t-align-center">
+                            <p class="title m_10">
+                                MIX StudIo
+                            </p>
+                            <img src="images/coll-2.png" alt="" class="m_10">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="collab-text">
+                                <p data-i18n="collab-2" class="root"> </p>
+                                <p>Bilibili: <a href="https://space.bilibili.com/1202651168"
+                                        target="_blank">https://space.bilibili.com/1202651168</a></p>
+                                <p>Twitter: <a href="https://twitter.com/MIXStudio2022"
+                                        target="_blank">https://twitter.com/MIXStudio2022</a></p>
+                                <p>Portfolio Link:<a href=" https://www.behance.net/MIX_Studio" target="_blank">
+                                        https://www.behance.net/MIX_Studio</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m_20">
+                    <div class="row collab-box">
+                        <div class="col-md-4 t-align-center">
+                            <p class="title m_10">
+                                PuPuPuPu Island
+                            </p>
+                            <img src="images/coll-3.png" alt="" class="m_10">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="collab-text">
+                                <p data-i18n="collab-3" class="root"> </p>
+                                <p>Twitter: <a href="https://twitter.com/pupupupuisland"
+                                        target="_blank">https://twitter.com/pupupupuisland</a></p>
+                                <p>Medium: <a href="https://medium.com/@puupupuisland.eth"
+                                        target="_blank">https://medium.com/@puupupuisland.eth</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 m_20">
+                    <div class="row collab-box">
+                        <div class="col-md-4 t-align-center">
+                            <p class="title m_10">
+                                ATL SER
+                            </p>
+                            <img src="images/coll-4.png" alt="" class="m_10">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="collab-text">
+                                <p data-i18n="collab-4" class="root"> </p>
+                                <p>Twitter: <a href="https://twitter.com/NFTotal_Atlser"
+                                        target="_blank">https://twitter.com/NFTotal_Atlser</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="artists">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 t-align-center m_20 mint-title" style="position: relative;">
+                    <img src="images/artist-title.png" alt="" class="">
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <p class="m_10" style="color:rgb(104, 255, 66)">Sherloh64 (希姐)</p>
+                    <img src="images/artist-1.png" alt="" class="m_10">
+                    <p data-i18n="artist-1" class="root m_10"></p>
+                    <a href="https://twitter.com/Sherloh64" target="_blank" class="m_20">@Sherloh64</a>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <p class="m_10" style="color:rgb(104, 255, 66)">YuLan (羽嵐)</p>
+                    <img src="images/artist-2.png" alt="" class="m_10">
+                    <p data-i18n="artist-2" class="root m_10"></p>
+                    <a href="https://twitter.com/yulan1225" target="_blank" class="m_20">@yulan1225</a>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <p class="m_10" style="color:rgb(104, 255, 66)">Cjhan Wu (吳青展)</p>
+                    <img src="images/artist-3.png" alt="" class="m_10">
+                    <p data-i18n="artist-3" class="root m_10"></p>
+                    <a href="https://twitter.com/cjhanwu" target="_blank" class="m_20">@cjhanwu</a>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <p class="m_10" style="color:rgb(104, 255, 66)">Gaston (呂承洋)</p>
+                    <img src="images/artist-4.png" alt="" class="m_10">
+                    <p data-i18n="artist-4" class="root m_10"></p>
+                    <a href="https://twitter.com/mgaston0204" target="_blank" class="m_20">@mgaston0204</a>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <p class="m_10" style="color:rgb(104, 255, 66)">KYuan (黃園鈞)</p>
+                    <img src="images/artist-5.png" alt="" class="m_10">
+                    <p data-i18n="artist-5" class="root m_10"></p>
+                    <a href="https://twitter.com/_kyuan0518" target="_blank" class="m_20">@_kyuan0518</a>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <p class="m_10" style="color:rgb(104, 255, 66)">Weithhhh (魏廷翰)</p>
+                    <img src="images/artist-6.png" alt="" class="m_10">
+                    <p data-i18n="artist-6" class="root m_10"></p>
+                    <a href="https://twitter.com/weth1114" target="_blank" class="m_20">@weth1114</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-link m_10">
+                    <span style="padding-top: 10px; display: block;color: #fff;"><span
+                            style="font-family:Impact;">©</span> 2023
+                        the sandbox TAIWAN creator club
+                    </span>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-icon">
+                        <a href="https://www.youtube.com/@twthesandbox2921" target="_blank">
+                            <img src="images/yt-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://www.instagram.com/TWCCTheSandbox" target="_blank">
+                            <img src="images/ig-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://t.co/h8OzcNzD8l" target="_blank">
+                            <img src="images/discord-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://twitter.com/TWCCTheSandbox" target="_blank">
+                            <img src="images/twitter-icon.png" alt="" width="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Initialize Swiper -->
+    <script>
+
+        function updateText() {
+            var i18n = $.i18n();
+            var language = $("#i18n-selector").val();
+
+            i18n.locale = language;
+            i18n.load("i18n/" + i18n.locale + ".json", i18n.locale)
+                .done(function () {
+                    $("[data-i18n]").i18n();
+                });
+        }
+        // Enable debug
+        $.i18n.debug = true;
+
+        $(document).ready(function ($) {
+            "use strict";
+            updateText();
+        });
+
+        $("#i18n-selector").on("change", function () {
+            updateText();
+        });
+    </script>
+
+</body>
+
+</html>
