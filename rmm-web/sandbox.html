@@ -1,0 +1,298 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- 彈窗-->
+    <link href="js/lity/lity.css" rel="stylesheet" type="text/css">
+    <!-- 輪播-->
+    <link href="js/swiper/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/loading.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 彈窗-->
+    <script src="js/lity/lity.js"></script>
+    <!-- 語系 -->
+    <script src="js/jq-i18n/jquery.i18n.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.parser.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.language.js"></script>
+    <!-- 輪播-->
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/internal.js"></script>
+    <link rel="shortcut icon" href="images/ico.ico" />
+    <title>RICHMAMA DAO</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-icon">
+                    <a href="https://www.youtube.com/playlist?list=PLYV-Rzco_2OQpMVne2L5nFLUVI6sfQ-ya" target="_blank">
+                        <img src="images/yt-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://www.instagram.com/richmamadao/?ig" target="_blank">
+                        <img src="images/ig-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://discord.gg/XZWWfhHezY" target="_blank">
+                        <img src="images/discord-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://twitter.com/RichMamaDao" target="_blank">
+                        <img src="images/twitter-icon.png" alt="" width="25">
+                    </a>
+                </div>
+                <select id="i18n-selector">
+                    <option value="cn">cn</option>
+                    <option value="en">en</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="javascript:;" class="menu_button">
+                <div class="menuicon"></div>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html" class="header-scroll">richmama
+                            <span class="line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#mint" class="header-scroll">mint
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#roadmap" class="header-scroll">Roadmap
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sandbox.html" class="header-scroll active">the Sandbox
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rmmisland.html" class="header-scroll">RMM iSLaND
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#team" class="header-scroll">team
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="menu_mob">
+            <ul>
+                <li>
+                    <a href="index.html" class="header-scroll active">story
+                        <span class="line"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#mint" class="header-scroll">mint
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#roadmap" class="header-scroll">Roadmap
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="sandbox.html" class="header-scroll active">the Sandbox
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="rmmisland.html" class="header-scroll ">RMM iSLaND
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#team" class="header-scroll">team
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="md-overlay"></div>
+    </header>
+    <section class="banner">
+        <!-- 最近消息區塊 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="news">
+                        <div class="news-box">
+                            <span class="news-title">
+                                <span style="margin-right: 5px;"><img src="images/news-icon.svg" alt="" width="30"
+                                        height="24"></span>
+                                <span data-i18n="news-title">最新消息</span>
+                            </span>
+                            <span class="marquee">
+                                <marquee data-i18n="news">這裡是最新消息區域</marquee>
+                            </span>
+                            <span class="history-btn">
+                                <a href="#" class="slide-history" data-i18n="history-title">
+                                    歷史消息
+                                </a>
+                                <span class="arrow"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="history">
+                            <div class="record">
+                                <span class="date">2022/09/20</span>
+                                <span class="text"
+                                    data-i18n="history">這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <video autoplay="" loop="" muted="" class="sand-video">
+            <source type="video/mp4" src="video/sand.mp4">
+        </video>
+    </section>
+    <section class="twcc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-us">
+                        <img src="images/twcc-title.png" alt="" class="ldx ldx-shake-v m_20">
+                        <p data-i18n="twccstory" class="root">twccstory</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/land.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="game-box">
+        <div class="container">
+            <div class="tab-inner">
+                <div class="row">
+                    <div class="col-12 t-align-center m_20 mint-title" style="position: relative;">
+                        <img src="images/game-title.png" alt="" class="ldx ldx-shake-v">
+                    </div>
+
+                    <div class="col-md-6 m_20">
+                        <img src="images/con-01.png" alt="">
+                    </div>
+                    <div class="col-md-6 m_20">
+                        <p class="m_10 root" data-i18n="game-story01"></p>
+                        <p class="m_10 root" data-i18n="earth" style="color: #00a8f6;"></p>
+                        <p class="m_10 root" data-i18n="game-story02"></p>
+                        <p class="m_10 root" data-i18n="lives" style="color: #78e15f;"></p>
+                        <p class="m_10 root" data-i18n="game-story03"></p>
+                        <p class="m_10 root" data-i18n="human" style="color: #949494;"></p>
+                        <p class="m_10 root" data-i18n="game-story04"></p>
+                    </div>
+                    <div class="col-md-4 m_20">
+                        <img src="images/con-02.png" alt="">
+                    </div>
+                    <div class="col-md-4 m_20">
+                        <img src="images/con-03.png" alt="">
+                    </div>
+                    <div class="col-md-4 m_20">
+                        <img src="images/con-04.png" alt="">
+                    </div>
+                    <div class="col-md-8" style="margin:30px auto 50px auto; ">
+                        <p class="root" data-i18n="game-story05"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-link m_20">
+                    <span style="padding-top: 10px; display: block;"><span style="font-family:Impact;">©</span> 2022
+                        richmamadao</span>
+
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <img src="images/footer-logo.png" alt="" width="180">
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-icon">
+                        <a href="https://www.youtube.com/playlist?list=PLYV-Rzco_2OQpMVne2L5nFLUVI6sfQ-ya"
+                            target="_blank">
+                            <img src="images/yt-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://www.instagram.com/richmamadao/?ig" target="_blank">
+                            <img src="images/ig-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://discord.gg/XZWWfhHezY" target="_blank">
+                            <img src="images/discord-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://twitter.com/RichMamaDao" target="_blank">
+                            <img src="images/twitter-icon.png" alt="" width="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Initialize Swiper -->
+    <script>
+        
+        function updateText() {
+            var i18n = $.i18n();
+            var language = $("#i18n-selector").val();
+
+            i18n.locale = language;
+            i18n.load("i18n/" + i18n.locale + ".json", i18n.locale)
+                .done(function () {
+                    $("[data-i18n]").i18n();
+                });
+        }
+        // Enable debug
+        $.i18n.debug = true;
+
+        $(document).ready(function ($) {
+            "use strict";
+            updateText();
+        });
+
+        $("#i18n-selector").on("change", function () {
+            updateText();
+        });
+    </script>
+
+</body>
+
+</html>
