@@ -1,0 +1,506 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- 彈窗-->
+    <link href="js/lity/lity.css" rel="stylesheet" type="text/css">
+    <!-- 輪播-->
+    <link href="js/swiper/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/loading.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 彈窗-->
+    <script src="js/lity/lity.js"></script>
+    <!-- 語系 -->
+    <script src="js/jq-i18n/jquery.i18n.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.parser.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.language.js"></script>
+    <!-- 輪播-->
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/internal.js"></script>
+
+    <link rel="shortcut icon" href="images/ico.ico" />
+    <title>TWCC</title>
+</head>
+
+<body>
+     <!-- gotop -->
+     <div class="gotop">
+        <a href="javascript:;"></a>
+    </div>
+    <!-- nft-彈窗 -->
+
+    <div class="md mint_result">
+        <div class="md-modal">
+            <button class="lity-close md-close" type="button">×</button>
+            <div class="md-content">
+                <div id="preloader">
+                    <div id="status"><img src="images/mint-loading.gif" /></div>
+                </div>
+                <img src="images/nft-result.jpg" alt="" width="500">
+                <p>#001</p>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+    </div>
+
+    <!-- nft-彈窗end -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-icon">
+                    <a href="https://www.youtube.com/@twthesandbox2921" target="_blank">
+                        <img src="images/yt-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://www.instagram.com/TWCCTheSandbox" target="_blank">
+                        <img src="images/ig-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://t.co/h8OzcNzD8l" target="_blank">
+                        <img src="images/discord-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://twitter.com/TWCCTheSandbox" target="_blank">
+                        <img src="images/twitter-icon.png" alt="" width="25">
+                    </a>
+                </div>
+                <div class="select-box">
+                    <span class="lan-icon">
+                        <img src="images/lan-icon.svg" alt="" width="20px">
+
+                    </span>
+
+                    <select id="i18n-selector">
+                        <option value="cn">中文</option>
+                        <option value="en">en</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+        </div>
+        <div style="background:#1491ffbb;border-top:1px solid #fff;border-bottom:1px solid #fff;">
+            <div class="container">
+                <a href="javascript:;" class="menu_button">
+                    <div class="menuicon"></div>
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span><img src="images/tw-cc-logo.png" alt="" width="26"></span>
+                                <span>TW CREATOR CLUB</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mint" class="header-scroll">TWCC PASS</a>
+                        </li>
+                        <li>
+                            <a href="#roadmap" class="header-scroll">Roadmap</a>
+                        </li>
+                        <li>
+                            <a href="collab.html" class="header-scroll">collaborate</a>
+                        </li>
+                        <a href="#" class="con-btn ldx ldx-damage" style="animation-duration:6.0s">
+                            <span id="connect-span">
+                                connect
+                            </span>
+                        </a>
+                    </ul>
+
+                </nav>
+                <!-- connect -->
+                <a href="#" class="con-btn-m ldx ldx-damage" style="animation-duration:6.0s">
+                    <span id="connect-span-m">
+                        connect
+                    </span>
+                </a>
+            </div>
+            <nav class="menu_mob">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span><img src="images/tw-cc-logo.png" alt="" width="26"></span>
+                            <span>TW CREATOR CLUB</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mint" class="header-scroll">TWCC PASS</a>
+                    </li>
+                    <li>
+                        <a href="#roadmap" class="header-scroll">Roadmap</a>
+                    </li>
+                    <li>
+                        <a href="collab.html" class="header-scroll">collaborate</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="md-overlay"></div>
+        </div>
+
+    </header>
+    <section class="banner">
+      
+        <!-- 最近消息區塊 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="news">
+                        <div class="news-box">
+                            <span class="news-title">
+                                <span style="margin-right: 5px;"><img src="images/news-icon.svg" alt="" width="30"
+                                        height="24"></span>
+                                <span data-i18n="news-title">最新消息</span>
+                            </span>
+                            <span class="marquee">
+                                <marquee data-i18n="news">這裡是最新消息區域</marquee>
+                            </span>
+                            <span class="history-btn">
+                                <a href="#" class="slide-history" data-i18n="history-title">
+                                    歷史消息
+                                </a>
+                                <span class="arrow"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="history">
+                            <div class="record">
+                                <span class="date" data-i18n="date"></span>
+                                <span class="text" data-i18n="history"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <video autoplay="" loop="" muted="">
+            <source type="video/mp4" src="video/bg.mp4">
+        </video>
+        <!-- <img src="images/banner.png" alt=""> -->
+    </section>
+    <section class="story" id="story">
+        <div class="container">
+            <div class="row " style="display:flex;align-items:center;">
+                <div class="col-md-6">
+                    <div class="about-us">
+                        <img src="images/sand-title.png" alt="" class="m_20">
+                        <p data-i18n="sand-story" class="root m_20"></p>
+                        <img src="images/story-title.png" alt="" class="m_20">
+                        <p data-i18n="twcc-story" class="root m_20"></p>
+                      
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-us">
+                        <img src="images/sand-logo.png" alt="" class="m_20"
+                            style="margin: 0 auto 20px auto; display:block">
+                        <img src="images/sand-area.png" alt="" class="m_20">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-box" id="mint">
+        <div class="container">
+            <div class="tab-inner">
+                <div class="row">
+                    <div class="col-12 t-align-center m_20 mint-title" style="position: relative;">
+                        <img src="images/mint-title.png" alt="" class="">
+
+                    </div>
+                    <div class="col-md-5" style="margin: 0 auto 20px auto;">
+                        <p data-i18n="twcc-pass" class="root" style="font-size:18px;"></p>
+                    </div>
+                    
+
+                    <div class="col-12 t-align-center m_10">
+
+                        <div class="mint-box m_20">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/sw-01.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-02.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-03.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-04.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-05.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-06.jpg" alt=""></div>
+
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 t-align-center m_40">
+                        <div class="quantity buttons_added m_10">
+                            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="5"
+                                name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                                inputmode="" id="qty_input"><input type="button" value="+" class="plus">
+                        </div>
+
+                        <a href="javascript:;" class="mint-btn mint_btn m_10">
+                            <span>mint</span>
+                        </a>
+                        <p class="mint-value"
+                            style="color:#ffea00;font-size: 2.5em;text-shadow: 0.1em 0.1em 0.2em black">0.1 eth</p>
+                        <p class="mint-total" style="text-shadow: 0.1em 0.1em 0.2em black">(<span
+                                style="font-size: 1.2em;">XX/XXXX</span>)</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="work" id="work">
+        <div class="container">
+            <div class="row " style="display:flex;align-items:center;">
+                <div class="col-12 t-align-center m_40">
+                    <img src="images/work-title.png" alt="">
+                </div>
+                <div class="col-md-4 m_20">
+                    <div class="work-title">
+                        <p>prororo</p>
+                    </div>
+                    <div>
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/G29-KDS2NVs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 m_20">
+                    <div class="work-title">
+                        <p>RAGNAROK</p>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Dxf1PgdoD4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 m_20">
+                    <div class="work-title">
+                        <p>softstar</p>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vouamv3y-5Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12" id="roadmap">
+                    <div class="t-align-center">
+                        <img src="images/road-title.png" alt="">
+                    </div>
+                    <div class="roadmap-box">
+                        <section id="cd-timeline" class="cd-container">
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>December 2022</h2>
+                                    <p data-i18n="roadmap01" class="root"></p>
+
+                                </div>
+                            </div>
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE 1 2023</h2>
+                                    <p data-i18n="roadmap02" class="root"></p>
+
+                                </div>
+                            </div>
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE 2 2023</h2>
+                                    <p data-i18n="roadmap03" class="root"></p>
+
+                                </div>
+                            </div>
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE4</h2>
+                                    <p data-i18n="roadmap04" class="root"></p>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slime">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 t-align-center m_40">
+                    <img src="images/slime-title.png" alt="">
+                </div>
+                <div class="col-12 m_20">
+                    <img src="images/relation.jpg" alt="" style="border: 4px solid #212121;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 t-align-center m_40">
+                    <img src="images/team-title.png" alt="">
+                </div>
+
+                <div class="col-md-3 t-align-center m_10 col-6">
+                    <div class="team-box">
+                        <p class="m_10">Pinky Pixie</p>
+                        <img src="images/team01.jpg" alt="" class="m_10">
+                        <p data-i18n="team01" class="root"></p>
+                        <p>　</p>
+                        <a href="https://twitter.com/seccpixie" target="_blank">@seccpixie</a>
+                    </div>
+                </div>
+                <div class="col-md-3 t-align-center m_10 col-6">
+                    <div class="team-box">
+                        <p class="m_10">DaiDa Tsai (蔡岱達)</p>
+                        <img src="images/team02.jpg" alt="" class="m_10">
+                        <p data-i18n="team02" class="root"></p>
+                        <a href="https://twitter.com/TsaiDaiDa" target="_blank">@TsaiDaiDa</a>
+                    </div>
+                </div>
+                <div class="col-md-3 t-align-center m_10 col-6">
+                    <div class="team-box">
+                        <p class="m_10">HeroBoar (山豬俠)</p>
+                        <img src="images/team03.jpg" alt="" class="m_10">
+                        <p data-i18n="team03" class="root"></p>
+                        <a href="https://twitter.com/2hpStudio" target="_blank">@2hpStudio</a>
+                    </div>
+                </div>
+                <div class="col-md-3 t-align-center m_30 col-6">
+                    <div class="team-box">
+                        <p class="m_10">Xummer Lai</p>
+                        <img src="images/team04.jpg" alt="" class="m_10">
+                        <p data-i18n="team04" class="root"></p>
+                        <p>　</p>
+                        <a href="https://twitter.com/XummerlaiXummer" target="_blank">@XummerlaiXummer</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-link m_10">
+                    <span style="padding-top: 10px; display: block;color: #fff;"><span
+                            style="font-family:Impact;">©</span> 2023
+                        the sandbox TAIWAN creator club
+                    </span>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-icon">
+                        <a href="https://www.youtube.com/@twthesandbox2921" target="_blank">
+                            <img src="images/yt-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://www.instagram.com/TWCCTheSandbox" target="_blank">
+                            <img src="images/ig-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://t.co/h8OzcNzD8l" target="_blank">
+                            <img src="images/discord-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://twitter.com/TWCCTheSandbox" target="_blank">
+                            <img src="images/twitter-icon.png" alt="" width="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            breakpoints: {
+                768: {
+                    slidesPerGroup: 1,
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerGroup: 2,
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+            loop: true,
+            autoplay: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        function updateText() {
+            var i18n = $.i18n();
+            var language = $("#i18n-selector").val();
+
+            i18n.locale = language;
+            i18n.load("i18n/" + i18n.locale + ".json", i18n.locale)
+                .done(function () {
+                    $("[data-i18n]").i18n();
+                });
+        }
+        // Enable debug
+        $.i18n.debug = true;
+
+        $(document).ready(function ($) {
+            "use strict";
+            updateText();
+        });
+
+        $("#i18n-selector").on("change", function () {
+            updateText();
+        });
+    </script>
+
+</body>
+
+</html>
