@@ -1,0 +1,521 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- 彈窗-->
+    <link href="js/lity/lity.css" rel="stylesheet" type="text/css">
+    <!-- 輪播-->
+    <link href="js/swiper/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/loading.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 彈窗-->
+    <script src="js/lity/lity.js"></script>
+    <!-- 語系 -->
+    <script src="js/jq-i18n/jquery.i18n.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.parser.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.language.js"></script>
+    <!-- 輪播-->
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/internal.js"></script>
+    <link rel="shortcut icon" href="images/ico.ico" />
+    <title>RICHMAMA DAO</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-icon">
+                    <a href="https://www.youtube.com/playlist?list=PLYV-Rzco_2OQpMVne2L5nFLUVI6sfQ-ya" target="_blank">
+                        <img src="images/yt-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://www.instagram.com/richmamadao/?ig" target="_blank">
+                        <img src="images/ig-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://discord.gg/XZWWfhHezY" target="_blank">
+                        <img src="images/discord-icon.png" alt="" width="25">
+                    </a>
+                    <a href="https://twitter.com/RichMamaDao" target="_blank">
+                        <img src="images/twitter-icon.png" alt="" width="25">
+                    </a>
+                </div>
+                <select id="i18n-selector">
+                    <option value="cn">cn</option>
+                    <option value="en">en</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="javascript:;" class="menu_button">
+                <div class="menuicon"></div>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">richmama
+                            <span class="line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mint" class="header-scroll">mint
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#roadmap" class="header-scroll">Roadmap
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sandbox.html" class="header-scroll">the Sandbox
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rmmisland.html" class="header-scroll">RMM iSLaND
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#team" class="header-scroll">team
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="menu_mob">
+            <ul>
+                <li>
+                    <a href="index.html" class="header-scroll active">richmama
+                        <span class="line"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mint" class="header-scroll">mint
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#roadmap" class="header-scroll">Roadmap
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="sandbox.html" class="header-scroll">the Sandbox
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="rmmisland.html" class="header-scroll">RMM iSLaND
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#team" class="header-scroll">team
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="md-overlay"></div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="news">
+                        <div class="news-box">
+                            <span class="news-title">
+                                <span style="margin-right: 5px;"><img src="images/news-icon.svg" alt="" width="30"
+                                        height="24"></span>
+                                <span data-i18n="news-title">最新消息</span>
+                            </span>
+                            <span class="marquee">
+                                <marquee data-i18n="news">這裡是最新消息區域</marquee>
+                            </span>
+                            <span class="history-btn">
+                                <a href="#" class="slide-history" data-i18n="history-title">
+                                    歷史消息
+                                </a>
+                                <span class="arrow"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="history">
+                            <div class="record">
+                                <span class="date">2022/09/20</span>
+                                <span class="text"
+                                    data-i18n="history">這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息這裡是歷史消息</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <video autoplay="" loop="" muted="">
+            <source type="video/mp4" src="video/bg.mp4">
+        </video>
+    </section>
+    <section class="story" id="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="about-us">
+                        <img src="images/story-title.png" alt="" class="ldx ldx-shake-v">
+                        <p data-i18n="story" class="root"></p>
+                    </div>
+                </div>
+                <div class="col-md-5 story-nft">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/rmm-01.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/rmm-06.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/rmm-02.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/rmm-07.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="main-box" id="mint">
+        <div class="container">
+            <div class="tab-inner">
+                <div class="row">
+                    <div class="col-12 t-align-center m_20 mint-title" style="position: relative;">
+                        <img src="images/mint-title.png" alt="" class="ldx ldx-shake-v">
+                    </div>
+
+                    <div class="col-12 t-align-center m_10">
+                        <div class="mint-box m_20">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/sw-01.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-02.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-03.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-04.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-05.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-06.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-07.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/sw-08.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 t-align-center m_20">
+                        <p class="mint-value" style="color:#fcee21;font-size: 3em;text-shadow: 0.1em 0.1em 0.2em black">
+                            soldout</p>
+                        <p class="m_10"><img src="images/arrow-down-y.svg" alt="" width="26"></p>
+
+                        <a href="https://opensea.io/collection/richmama-token" class="mint-btn mint_btn m_10"
+                            target="_blank">
+                            <img src="images/os-icon.png" alt="">
+                            opensea
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="t-align-center">
+                        <img src="images/road-title.png" alt="" class="ldx ldx-shake-v">
+                    </div>
+                    <div class="roadmap-box">
+                        <section id="cd-timeline" class="cd-container">
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE1</h2>
+                                    <p>
+                                        500張 開啟盲盒階段開獎。多款GAMEFI同步研發。<br>
+
+                                        1000張 開始組建實體礦場。<br>
+
+                                        1000張 激活礦場一階段月度獎。<br>
+
+                                        2000張 盲盒開獎，見證富婆保佑，特卡還是普卡的奇跡的時刻。<br>
+
+                                        不定期舉辦社區競賽，獲勝者獲得額外社區獎勵。<br>
+
+                                        上線首款GAMEFI。預計時間2022年Q2季度。
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE2</h2>
+                                    <p> 3000張 公佈特卡，套卡屬性賦能及公布套卡獎。<br>
+
+                                        4000張 成立社區DAO，成立社區金庫。<br>
+
+                                        4000張 抽取套卡專屬獎勵。<br>
+
+                                        4000張 激活礦場二階段月度獎。<br>
+                                        上線多款GameFi。預計時間2022年Q2-Q3季度。
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE3</h2>
+                                    <p>社區NFT新賦能披露，現有NFT的收益權益增加與拓展。<br>
+
+                                        元宇宙二階段規劃與進展的詳細報告。<br>
+
+                                        會員專屬限量版的T恤和其他好東西。
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/logo-icon.svg" alt="Picture">
+                                </div>
+
+                                <div class="cd-timeline-content">
+                                    <h2>PHASE4</h2>
+                                    <p>元宇宙遊戲主題樂園啟動。<br>預計時間2022年Q3-Q4季度。<br>
+
+                                        RichMama DAO NFT 社區治理及新規劃的詳細報告。
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+
+                        </section>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="images/team-title.png" alt="" class="ldx ldx-shake-v">
+                </div>
+                <div class="col-md-7 team-nft">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/rmm-05.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="images/rmm-03.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="images/rmm-04.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="images/rmm-08.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-us" style="text-shadow: 0.1em 0.1em 0.2em black;">
+                        
+                        <p class="m_20">
+                        <p class="team-title">Maruko</p>
+                        遊戲設計師、礦場經營者。<br>
+                        擁有多項遊戲設計專利，於美國等地擁有多處礦場。<br>
+                        超能力屬性：遊戲制霸者。
+                        </p>
+                        <p class="m_20">
+                        <p class="team-title02">G哥</p>
+                        斜槓者、Youtuber，幣圈KOL。<br>研究所攻讀政治、經濟與力學，眾多項目組又愛又怕的KOL，只因過於真實。<br>
+
+                        超能力屬性：腹肌斜槓者。
+                        </p>
+                        <p class="m_20">
+                        <p class="team-title03">小礦工</p>
+                        軟件工程師，Youtuber，幣圈KOL。<br>
+                        智能合約、網站SEO是基操，最愛賺錢，但取之有道，日常樂趣是與G哥相愛相殺。<br>
+
+                        超能力屬性：廢話終結者
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-us" style="text-shadow: 0.1em 0.1em 0.2em black;">
+                        <p class="m_20">
+                        <p class="team-title">Omi</p>
+                        遊戲設計師、礦場經營者。<br>
+                        擁有多項遊戲設計專利，於美國等地擁有多處礦場。<br>
+                        超能力屬性：遊戲制霸者。
+                        </p>
+                        <p class="m_20">
+                        <p class="team-title02">Hotazaki</p>
+                        斜槓者、Youtuber，幣圈KOL。<br>研究所攻讀政治、經濟與力學，眾多項目組又愛又怕的KOL，只因過於真實。<br>
+
+                        超能力屬性：腹肌斜槓者。
+                        </p>
+                        <p class="m_20">
+                        <p class="team-title03">Monster</p>
+                        軟件工程師，Youtuber，幣圈KOL。<br>
+                        智能合約、網站SEO是基操，最愛賺錢，但取之有道，日常樂趣是與G哥相愛相殺。<br>
+
+                        超能力屬性：廢話終結者
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 ">
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-link m_20">
+                    <span style="padding-top: 10px; display: block;"><span style="font-family:Impact;">©</span> 2022
+                        richmamadao</span>
+
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <img src="images/footer-logo.png" alt="" width="180">
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-icon">
+                        <a href="https://www.youtube.com/playlist?list=PLYV-Rzco_2OQpMVne2L5nFLUVI6sfQ-ya"
+                            target="_blank">
+                            <img src="images/yt-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://www.instagram.com/richmamadao/?ig" target="_blank">
+                            <img src="images/ig-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://discord.gg/XZWWfhHezY" target="_blank">
+                            <img src="images/discord-icon.png" alt="" width="25">
+                        </a>
+                        <a href="https://twitter.com/RichMamaDao" target="_blank">
+                            <img src="images/twitter-icon.png" alt="" width="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            breakpoints: {
+                768: {
+                    slidesPerGroup: 1,
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerGroup: 2,
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+            loop: true,
+            autoplay: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        function updateText() {
+            var i18n = $.i18n();
+            var language = $("#i18n-selector").val();
+
+            i18n.locale = language;
+            i18n.load("i18n/" + i18n.locale + ".json", i18n.locale)
+                .done(function () {
+                    $("[data-i18n]").i18n();
+                });
+        }
+        // Enable debug
+        $.i18n.debug = true;
+
+        $(document).ready(function ($) {
+            "use strict";
+            updateText();
+        });
+
+        $("#i18n-selector").on("change", function () {
+            updateText();
+        });
+    </script>
+
+</body>
+
+</html>
