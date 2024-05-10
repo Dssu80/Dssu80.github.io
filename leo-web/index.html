@@ -1,0 +1,391 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- 彈窗-->
+    <link href="js/lity/lity.css" rel="stylesheet" type="text/css">
+    <!-- 輪播-->
+    <link href="js/swiper/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/loading.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 彈窗-->
+    <script src="js/lity/lity.js"></script>
+    <!-- 語系 -->
+    <script src="js/jq-i18n/jquery.i18n.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.parser.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/jq-i18n/jquery.i18n.language.js"></script>
+    <!-- 輪播-->
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/internal.js"></script>
+    <link rel="shortcut icon" href="images/ico.ico" />
+    <title>Leo Studio</title>
+</head>
+
+<body>
+
+    <!-- nft-彈窗 -->
+
+    <div class="md mint_result">
+        <div class="md-modal">
+            <button class="lity-close md-close" type="button">×</button>
+            <div class="md-content">
+                <div id="preloader">
+                    <div id="status"><img src="images/mint-loading.gif" /></div>
+                </div>
+                <video src="video/leo-box.mp4" width="500" height="500" autoplay muted loop></video>
+                <!-- <img src="images/nft-result.png" alt="" width="500"> -->
+                <p>#001</p>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+    </div>
+
+    <!-- nft-彈窗end -->
+
+    <!-- whitelist-彈窗 -->
+
+    <div class="md wl_result">
+        <div class="md-modal">
+            <button class="lity-close md-close" type="button">×</button>
+            <div class="md-content">
+
+                <p>you are in whitelist</p>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+    </div>
+
+    <!-- whitelist-彈窗end -->
+    <!-- gotop -->
+    <div class="gotop">
+        <a href="javascript:;"></a>
+    </div>
+
+    <header>
+        <div class="select-lan">
+            <span class="select-box">
+                <span class="lan-icon">
+                    <img src="images/lan-icon.svg" alt="" width="20px">
+
+                </span>
+
+                <select id="i18n-selector">
+                    <option value="cn">中文</option>
+                    <option value="en">EN</option>
+                </select>
+
+            </span>
+        </div>
+        <div class="container">
+            <a href="javascript:;" class="menu_button">
+                <div class="menuicon"></div>
+            </a>
+            <nav class="menu">
+                <ul>
+
+                    <li>
+                        <a href="#story" class="header-scroll">story
+                            <span class="line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mint" class="header-scroll">Mint
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="utility.html">utility
+                            <span class="line"></span>
+
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="defi.html" class="header-scroll">DEFI
+                            <span class="line"></span>
+
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#team" class="header-scroll">team
+                            <span class="line"></span>
+                        </a>
+                    </li>
+
+                    <!-- connect -->
+                    <a href="#" class="con-btn">
+                        <span>
+                            connect
+                        </span>
+                    </a>
+
+                </ul>
+
+            </nav>
+            <!-- connect -->
+            <a href="#" class="con-btn-m">
+                <span>
+                    connect
+                </span>
+            </a>
+
+        </div>
+        <nav class="menu_mob">
+            <ul>
+                <li>
+                    <a href="#story" class="header-scroll active">story
+                        <span class="line"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mint" class="header-scroll">Mint
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="utility.html" class="header-scroll">utility
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="defi.html" class="header-scroll">DEFI
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#team" class="header-scroll">team
+                        <span class="line"></span>
+
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="md-overlay"></div>
+    </header>
+    <section class="banner">
+        <img src="images/leo-logo.png" alt="" class="ldx ldx-damage" style="animation-duration:4.0s">
+        <video autoplay="" loop="" muted="">
+            <source type="video/mp4" src="video/bg.mp4">
+        </video>
+    </section>
+    <section class="story" id="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 t-align-center" style="margin: 0 auto;">
+                    <div class="about-us">
+                        <img src="images/story-title.png" alt="" class="ldx ldx-wander-v m_20">
+                        <p data-i18n="story" class="root"></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="main-box" id="mint">
+        <div class="container">
+            <div class="tab-inner">
+                <div class="row">
+                    <div class="col-12 t-align-center m_10 mint-title" style="position: relative;">
+                        <img src="images/mint-title.png" alt="" class="ldx ldx-wander-v m_20">
+                    </div>
+                    <div class="col-12">
+                        <p class="t-align-center">check whitelist</p>
+                        <div class="whitelist-address">
+                            <input type="text" placeholder="your address">
+                            <a href="javascript:;" class="wl_btn">check</a>
+                        </div>
+                    </div>
+                    <div class="col-12 t-align-center m_20">
+                        <div class="mint-box m_20">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/001.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/002.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/003.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/004.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="images/005.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 t-align-center m_20">
+                        <div class="quantity buttons_added m_10">
+                            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="5"
+                                name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                                inputmode="" id="qty_input"><input type="button" value="+" class="plus">
+                        </div>
+
+                        <a href="javascript:;" class="mint-btn mint_btn ldx ldx-damage m_10"
+                            style="animation-duration:6.0s">
+                            mint
+                        </a>
+                        <!-- <p class="mint-value"
+                            style="color:#ffebaa;font-size: 2.5em;text-shadow: 0.1em 0.1em 0.2em black">0.1 eth</p> -->
+                        <p style="text-shadow: 0.1em 0.1em 0.2em black">( <span style="font-size: 1.2em;">0/2222</span>
+                            )</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-us" style="text-shadow: 0.1em 0.1em 0.2em black;">
+                        <div class="t-align-center m_20">
+                            <img src="images/team-title.png" alt="" class="ldx ldx-wander-v m_30">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <img src="images/omi.jpg" alt="" class="m_20">
+                    <p class="team-title">OMI</p>
+                    <p style="color: #fff;">幣圈擺渡人，<br>
+                        在幣圈各種板塊被埋過後立志普渡韭菜，<br>
+                        避免韭菜走他走過的彎路，成為韭菜最後的救贖</p>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <img src="images/haza.jpg" alt="" class="m_20">
+                    <p class="team-title02">HATOZAKI</p>
+                    <p style="color: #fff;">幣圈里長伯，<br>
+                        什麼閒事都管，沒有你想不到的事情他不能解答，<br>
+                        熱心助人，協助家人解決疑難雜症</p>
+                </div>
+                <div class="col-md-4 t-align-center m_20">
+                    <img src="images/mon.jpg" alt="" class="m_20">
+                    <p class="team-title03">MONSTER</p>
+                    <p style="color: #fff;">幣圈Monster，<br>
+                        立志當幣圈清流，拯救幣圈的妹子，<br>
+                        里歐量化策略主要負責人</p>
+                </div>
+                <div class="col-md-4 t-align-center">
+                    <img src="images/maruko.jpg" alt="" class="m_20">
+                    <p class="team-title04">Maruko</p>
+                    <p style="color: #fff;">遊戲設計師、礦場經營者。<br>
+                        擁有多項遊戲設計專利，於美國等地擁有多處礦場。<br>
+                        超能力屬性：遊戲制霸者。</p>
+                </div>
+                <div class="col-md-4 t-align-center">
+                    <img src="images/gbro.jpg" alt="" class="m_20">
+                    <p class="team-title05">Gbro</p>
+
+                    <p style="color: #fff;" class="m_10">斜槓者、Youtuber，幣圈KOL。<br>
+                        研究所攻讀政治、經濟與力學，<br>眾多項目組又愛又怕的KOL，只因過於真實。<br>
+                        超能力屬性：腹肌斜槓者。</p>
+                    <a href="https://linktr.ee/Gbrother" target="_blank" style="display: block;"><img
+                            src="images/linktree.svg" alt="" width="100px"></a>
+                </div>
+                <div class="col-md-4 t-align-center">
+                    <img src="images/steven.jpg" alt="" class="m_20">
+                    <p class="team-title06">STEVEN</p>
+                    <p style="color: #fff;" class="m_10">軟件工程師，Youtuber，幣圈KOL。<br>
+                        智能合約、網站SEO是基操，最愛賺錢，<br>但取之有道，日常樂趣是與G哥相愛相殺。<br>
+                        超能力屬性：廢話終結者</p>
+                    <a href="https://linktr.ee/TinyTinyMiner" target="_blank" style="display: block;"><img
+                            src="images/linktree.svg" alt="" width="100px"></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer-link m_20">
+                    <span style=" display: block;color:#01ffb3;font-size: 1.2em;"><span
+                            style="font-family:Impact;">©</span> 2022
+                        LEO STUDIO
+                    </span>
+                    <div class="footer-icon">
+
+                        <a href="https://discord.gg/sFheGFYSRU" target="_blank">
+                            <img src="images/discord-icon.png" alt="" width="31">
+                        </a>
+                        <a href="https://twitter.com/LeoStudio_LS" target="_blank">
+                            <img src="images/twitter-icon.png" alt="" width="31">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            breakpoints: {
+                768: {
+                    slidesPerGroup: 1,
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerGroup: 1,
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+            loop: true,
+            autoplay: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        function updateText() {
+            var i18n = $.i18n();
+            var language = $("#i18n-selector").val();
+
+            i18n.locale = language;
+            i18n.load("i18n/" + i18n.locale + ".json", i18n.locale)
+                .done(function () {
+                    $("[data-i18n]").i18n();
+                });
+        }
+        // Enable debug
+        $.i18n.debug = true;
+
+        $(document).ready(function ($) {
+            "use strict";
+            updateText();
+        });
+
+        $("#i18n-selector").on("change", function () {
+            updateText();
+        });
+    </script>
+</body>
+
+</html>
